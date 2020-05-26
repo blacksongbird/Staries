@@ -1,0 +1,39 @@
+body {
+  color: rgba(0, 0, 0, 0.85);
+  font-family:'Montserrat',sans-serif;
+}
+
+#progress {
+  height: 14px;
+  background-color: #B6965E;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 750px;
+  max-width: 94%;
+  margin: 125px auto 100px auto;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 32px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.9;
+  letter-spacing: .2px;
+  font-family: 'Montserrat',sans-serif;
+  text-align: justify;
+  margin-bottom: 2em;
+}
+
+.byline {
+  color: #b3b3b3;
+  font-size: 24px;
+  font-family: "Montserrat Alternates";
+}

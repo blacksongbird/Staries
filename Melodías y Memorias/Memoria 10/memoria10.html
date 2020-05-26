@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Memoria 10</title>
+  <link rel="stylesheet" href="../../css/stylemym.css">
+  <link rel="stylesheet" href="../../css/textmessage.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="../../js/removeBanner.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttonmym.css">
+  <link rel="stylesheet" href="../../css/playermym.css">
+  <link rel="stylesheet" href="./playermym2.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>Nudo del Desenlace (Parte I)</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/mym/Memory10Art.png" class="active" id="_1">
+                    <img src="../../img/mym/Memory10Art.png" id="_2">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls" style='margin-left:145px; position:absolute; width:160px;'>
+                    <div class="control">
+                        <div class="button" id="play-previous">
+                            <ion-icon name="skip-backward" id="iconoboton" style="color: #57a639; font-size:40px;"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton" style="font-size:40px;"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+                            <ion-icon name="skip-forward" id="iconoboton" style="color: #57a639; font-size:40px;"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Memoria 10</span><br><br><br>
+    <span class="byline">Melodías y Memorias - Gabriel Lobo</span>
+
+      <p>Cuando realizas un viaje en automóvil —sobre todo si es extenso—, puede resultar en una oportunidad única para reflexionar mientras disfrutas del paisaje. Yo mismo he emprendido paseos así fuera de La Ciudad Sin Nombre —aunque nunca he salido de El País Más Feliz del Mundo—, y, aunque disfruto mucho el trayecto, siempre siento esa nostalgia de saber que el destino se aproxima. Inminente, y a veces despiadado. Y así es como me siento ahora mismo. Todo lo bueno tiene que acabar, en algún momento, sin importar qué tanto dure. Y créanme, el horizonte de esta historia está muy cerca.</p>
+
+      <p>&emsp;&emsp;Después de tener malas experiencias con las relaciones durante estos últimos 4 años, sigo preguntándome si en verdad vale la pena conservar las amistades, los amores y las ilusiones. Y debe de ser algo que nos ocurre a todos por igual, aunque, al mismo tiempo, de distintas maneras.</p>
+
+      <p>&emsp;&emsp;Pero sin importar cuántas veces me defrauden, siempre entrego otra oportunidad, y otra y otra y otra más —y otra y otra más—. Y es por ello que las relaciones acaban siendo muy tediosas para mí, hasta el punto de querer alejarme de todo sin aviso ni retorno. Pero tampoco puedo decir que no hubo buenos momentos a lo largo de esta historia. Y es por ellos que relato mis memorias.</p>
+
+      <p>&emsp;&emsp;Y de todas las demás, El Día de la Grieta es la peor de todas. Y por mucho. Pero antes de narrar el nudo, es importante que sepan algo. Las serpientes de todos los involucrados en esta historia la afectan de un modo u otro, pero hay algunas serpientes que tienen efectos terribles. La depresión y la ansiedad son algunos de ellos.</p>
+
+      <p>&emsp;&emsp;Imagino que habrán leído en algún momento del efecto acción-reacción o efecto mariposa —y si no lo hicieron, tranquilos, no los enviaré a Google de nuevo—. Este efecto consiste en que, independientemente de las circunstancias de un entorno, toda acción tendrá una reacción. Y si lo vemos desde la perspectiva social, el efecto mariposa está presente siempre que hacemos o decimos algo que pueda afectar —directa o indirectamente— a otra persona o grupo de personas. Y es desde este punto de vista que nos importa analizarlo. Porque, independientemente de lo que pase en tu entorno, lo que hagas o no hagas afecta a los demás —en un buen o mal sentido—. Y sí, así como existen los pecados de acción, los de omisión son su contraparte —y suelen ser mucho peores—.</p>
+
+      <p>&emsp;&emsp;Desde el retiro, comencé a sentir un vacío y una tristeza muy profundos. Y recordé algo que, en una ocasión, Roy me dijo tras comentarle lo ocurrido durante el viaje.</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/roy.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Roy</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+            <div class="message received">
+                    Creo que a veces eres demasiado bueno, y en este caso, eso es un defecto.
+                     <span class="metadata"><span class="time"></span></span>
+            </div>
+        </div>
+      </div><br>
+
+      <p>Y era cierto; de hecho, lo sigue siendo. A veces me odio a mi mismo por darlo todo de mí para que las cosas salgan bien. Porque normalmente no acaban así, y yo soy el que más pierdo tras ello. No me malinterpreten, no piensen que me quiero hacer la víctima —otra sugerencia de Roy, pero eso no forma parte de esta historia—; simplemente debo contar las cosas como en realidad ocurrieron, y eso es lo más difícil de todo. Porque no quiero lastimar a las personas que tuvieron algo que ver. Esta historia no es mi venganza, es mi desahogo; así que no crean que lo hago con malas intenciones. Pero aunque todos somos culpables de lo que pasó, pocos aprendimos de ello, y eso es lo más triste de este capítulo. Ésta es la parte más importante de mis experiencias. Bienvenidos a El Día de la Grieta.</p>
+
+      <h1 style="font-size: 30px;">-Nudo del Desenlace (Parte 1)-</h1>
+      <span class="byline">Toca <ion-icon name="skip-forward" style="font-size: 15px; color: #57a639"></ion-icon> en el reproductor para pasar a la siguiente canción. </span>
+      <br><br>
+
+      <p>Después de los incómodos eventos del retiro, cosas similares se dieron a lo largo de los meses siguientes, hasta El Día de la Grieta. Y fueron los peores meses del año, sin duda. Hablé con Sea sobre ello alrededor de unas 2 veces más. En vano, obviamente. Pero yo insistía en que era algo insignificante. Desearía haberlo hablado de una manera más directa, pero no lo hice, debido al terror que le tenía a la simple idea de perderla.</p>
+
+      <p>&emsp;&emsp;Intenté sobrellevar la carga pasando más tiempo con Roy y con Patrick. Pero cuando estábamos todos reunidos, tanto Roy como Patrick, como Sea y como los demás, me sentía muy incómodo. Pero no quería que las cosas se tornaran así para los demás, por eso decidí callarme, conectar mis audífonos a mi teléfono y fingir que escuchaba cada vez que me hablaban.</p>
+
+      <p>&emsp;&emsp;Los días se volvieron largos y agotadores. Mis notas bajaron con mis ánimos y dejé de verle el lado bueno a las cosas durante un tiempo. Pero con Sea, la relación siempre estuvo plagada de altibajos. Por ello, me sentía extraño al alegrarme después de llevar un par de días molesto por algo. Sentía que tanto yo como mi percepción de las cosas se contradecían todo el tiempo. Luego llegó el Día de la Independencia de El País Más Feliz del Mundo.</p>
+
+      <p>&emsp;&emsp;Durante esa época, se aproximaba la Feria Científica de nuestro instituto, donde todos los estudiantes presentan sus esfuerzos de todo un año para competir en la premiación a la ciencia y a la tecnología. Roy y yo trabajábamos juntos, como costumbre —y es algo que extraño muchísimo—, por lo que siempre nos reuníamos en mi casa para trabajar en nuestro prototipo. Convenientemente, ese año, el Día de la Independencia del País Más Feliz del Mundo cayó viernes, que eran los días en los que acostumbrábamos reunirnos. Por eso, después de la ceremonia, volvimos a mi casa a trabajar y a comer algo. Sin embargo, antes del acto cívico, recuerdo que Sea ni siquiera se molestó en saludarme. Al toparse conmigo en la formación, solo dijo:</p>
+
+      <p>&emsp;&emsp;—Dame un momento para ir a saludarlo.</p>
+
+      <p>Y sí, se refería al Conocido que Me Apuñaló por la Espalda —Nethan, para dejar de escribir su extenso título cada vez que necesite mencionarlo—. Para cuando terminó de hablar con él, yo ya estaba formando para confirmar mi asistencia al evento —ya que no hacerlo estaba entre las cosas que debías hacer si querías un reporte en tu expediente—. Luego, nos dirigimos al gimnasio del instituto y decidí sentarme con Roy en lugar de ella. Al concluir la agotadora ceremonia —de la cual pasé la mayor parte con mis audífonos puestos; a excepción de los himnos; tampoco estoy loco—, Fui con Roy a la salida y me dirigí a casa con él, sin decirle una sola palabra a Sea.</p>
+
+      <p>&emsp;&emsp;Consideré que necesitaba tiempo para pensar y aclarar mis ideas, y si algo he aprendido es que no hay mejor oportunidad para hacerlo que una tarde con tu mejor amigo —a pesar de las circunstancias—.</p>
+
+      <p>&emsp;&emsp;—No sé qué hacer —le dije a Roy mientras sostenía mi control, al mismo tiempo que él presionaba + para iniciar otra batalla.</p>
+
+      <p>&emsp;&emsp;—¿Con qué? —preguntó sin apartar la vista del televisor, ya que ambos sabíamos que se trataba de una de esas charlas en medio del juego, por lo que no podías considerar descortés no mirar a la persona con la que hablabas; bastaba un despiste para que tu oponente te ganara.</p>
+
+      <p>&emsp;&emsp;—Con Sea —dije sin voltear a verlo, obviamente.</p>
+
+      <p>&emsp;&emsp;—Creo que sé a qué te refieres —contestó. Y es algo particular porque, hasta entonces, pensé que yo era el único que había notado el problema. Pero entre las miles de cosas que admiro de Roy, su capacidad de observar y deducir está entre las primeras de la lista.</p>
+
+      <p>&emsp;&emsp;—¿Ajá?</p>
+
+      <p>&emsp;&emsp;—Es muy obvio el porqué estás molesto con ella. Y es comprensible. Si yo fuera tú, también lo estaría. ¿Ya hablaste con ella?</p>
+
+      <p>&emsp;&emsp;—Dos veces, sin éxito, obviamente.</p>
+
+      <p>&emsp;&emsp;—Mmm... ¿Y tú qué quieres hacer?</p>
+
+      <p>&emsp;&emsp;—No sé, estoy preocupado; me siento incómodo cuando estoy con ella, pero no en la forma en que me sentiría incómodo estando con una chica. Es una incomodidad diferente.</p>
+
+      <p>&emsp;&emsp;—¿Por eso no le dijiste nada hoy al salir?</p>
+
+      <p>&emsp;&emsp;—Exacto. Pero no quiero parecer el típico novio celoso y posesivo, pero esto está volviéndose en algo más serio y me preocupa.</p>
+
+      <p>&emsp;&emsp;—No estás siendo celoso; eso es algo que ella no debería hacer, pero tú no la puedes obligar.</p>
+
+      <p>&emsp;&emsp;—Lo sé, por eso me siento impotente. Y por más que trato de que se dé cuenta de lo que me ocurre, parece que no le importa. Siento como si simplemente me ignorara.</p>
+
+      <p>&emsp;&emsp;—No lo sientes, es un hecho.</p>
+
+      <p>&emsp;&emsp;—Gracias, eso es muy reconfortante —dije mientras lo veía directamente. Que se joda la regla de hablarle a la TV.</p>
+
+      <p>&emsp;&emsp;—De nada. Pero en serio, deberías hacer algo, rápido. Al menos antes de que pase algo peor —concluyó. Y sí, la regla existe por algo; me había ganado, otra vez.</p>
+
+      <p>Ay Roy, tenías tanta razón. Jamás se me habría ocurrido que ese "algo peor" sucedería una semana después.</p>
+
+      <span class="byline">Hora: 16:24.<br><br>
+
+        Fecha: Jueves 20, 2017.<br><br>
+
+        Lugar: Gradería del Edificio de Informática del Instituto. <br><br></span>
+
+        <p>Dos chicos; uno alto y con pecas y el otro no tan alto y delgado, bajan las escaleras, dirigiéndose al primer piso. Simultáneamente, una conversación toma lugar.</p>
+
+        <p>&emsp;&emsp;—Creo que le pediré a Sea que nos demos un tiempo —indicó el chico delgado.</p>
+
+        <p>&emsp;&emsp;—No soy nadie para juzgar tus decisiones, pero creo que es lo mejor. Mientras eso haga que tus ánimos suban un poco, porque, diablos, no te has visto bien últimamente —exclamó el alto con pecas, estando ya cerca de la salida.</p>
+
+        <p>&emsp;&emsp;—Lo sé, pero dudo que pueda hablar con ella directamente ahora. Seguramente ya salió y está de regreso en su casa, entonces le escribiré en un rato. Gracias por ayudarme, Roy.</p>
+
+        <p>&emsp;&emsp;—No es nada, Ty. Sabes que cuentas conmigo con lo que sea —dijo el chico alto con pecas mientras chocaba su puño derecho con el del chico delgado, para despedirse.</p>
+
+        <p>Y dicho y hecho, al llegar a casa, tomé mi celular y comencé a escribir, sin saber exactamente lo que le diría, pero en todo caso no quería alargar más lo inevitable.</p>
+        
+        <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message sent">
+                  Sea, necesito que nos demos un tiempo
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+            <div class="message received">
+                    ¿Por qué? :(
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  No me he sentido cómodo últimamente
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+            <div class="message received">
+                    ¿Por qué lo dices?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Creo que sabes bien porqué
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+            <div class="message received">
+                    ¿No confías en mí?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+            <div class="message sent">
+                  Quiero hacerlo, pero cómo esperas que lo haga si me siento ignorado y ríes y abrazas más a tus amigos que a mí, que soy tu novio. En casos así preferiría ser tu amigo más que tu novio, ¿sabes?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>    
+            <div class="message received">
+                    Está bien, si quieres tiempo yo lo respeto. :c
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Gracias por comprender.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+        </div>
+      </div><br>
+
+        <p>Y apagué mi teléfono. Quería evitar una discusión fuerte. Sabía que la había lastimado, pero no era mi culpa; y no tenía opción. Era algo que yo necesitaba. Y por primera vez en mucho tiempo, dormí toda una noche tranquilamente, desconociendo la desgracia por la que pasaría al día siguiente. El Día de la Grieta.</p>
+
+        <span class="byline">Hora: 05:00.<br><br>
+
+          Fecha: 21 de Septiembre, 2017 (El Día de la Grieta).<br><br>
+
+          Lugar: Mi casa. <br><br></span>
+
+        <p>Me desperté como de costumbre, un poco más tranquilo y descansado de lo normal. Me levanté de mi cama, salí de mi cuarto y me duché. Me vestí y desayuné un par de waffles con miel de abeja. Jugo de naranja, con la vitamina suficiente para un día de instituto. Era viernes, así que saldría temprano. Sin embargo, debía quedarme a trabajar en un ensayo para mi profesor de Cívica. Con Roy, nuevamente.</p>
+
+        <span class="byline">Hora: 06:50.<br><br>
+
+          Fecha: 21 de Septiembre, 2017 (El Día de la Grieta).<br><br>
+
+          Lugar: Patio del Instituto. <br><br></span>
+
+        <p>Ya en el instituto, pasé a la capilla de la Iglesia, y tras rezar unos 2 o 3 minutos, me dirigí al patio a formar. No fui a ver a Sea, como solía hacerlo. Al contrario, fui a saludar a Roy, que llegaba algo tarde. Nada más fuera de lo común.</p>
+
+        <span class="byline">Hora: 11:20.<br><br>
+
+          Fecha: 21 de Septiembre, 2017 (El Día de la Grieta).<br><br>
+
+          Lugar: Cafetería del Instituto. <br><br></span>
+
+        <p>Tras varias clases sin hablar con Sea, a pesar de estar en el mismo grupo, fui a almorzar a la cafetería con Roy, como de costumbre.</p>
+
+        <span class="byline">Hora: 12:10.<br><br>
+
+          Fecha: 21 de Septiembre, 2017 (El Día de la Grieta).<br><br>
+
+          Lugar: Pasillos del Instituto. <br><br></span>
+
+        <p>Después de almorzar, me cepillé los dientes y me dirigí a la clase de Español; la última de ese día. Pero, como mencioné previamente, debía quedarme con Roy trabajando en el ensayo. A esa hora, me crucé con Patrick en los pasillos de camino a la clase del profesor Víctor.</p>
+
+        <p>&emsp;&emsp;—Creo que deberías hablar con Sea después de clases —señaló. Patrick llevaba un par de meses siendo el mejor amigo de Sea, sustituyéndome a mí, también. Por ello, era evidente que Sea le había contado lo ocurrido, y probablemente también se lo había dicho a Nethan, que, por lo que yo sabía hasta ese momento, él era un “amigo muy cercano” a ella.</p>
+
+        <p>&emsp;&emsp;—¿Ella quiere hablar conmigo?</p>
+
+        <p>&emsp;&emsp;—Sí, me lo dijo durante la mañana.</p>
+
+        <p>&emsp;&emsp;—Está bien. Dile que la esperaré después de Español.</p>
+
+        <span class="byline">Hora: 14:10.<br><br>
+
+          Fecha: 21 de Septiembre, 2017 (El Día de la Grieta).<br><br>
+
+          Lugar: Cafetería del Instituto. <br><br></span>
+
+        <p>Cuando la campana sonó, indicando la hora de salir, evacué la clase del profesor Víctor y esperé a que Sea saliera para hablar con ella. Cuando salió, caminamos hasta la cafetería para hablar. Podía sentir la discusión aproximarse. No nos tomamos la mano de camino allí. Le indiqué a Roy que le daría mi computadora para que terminara de revisar el ensayo mientras yo hablaba con Sea. Luego, hallamos un sitio y nos sentamos, uno al lado del otro, sin vernos directamente.</p>
+
+        <p>&emsp;&emsp;—¿Qué querías decirme? —pregunté, esperando una respuesta cliché como ¿qué te sucede? o ¿es porque estás celoso?</p>
+
+        <p>&emsp;&emsp;—¿Qué quieres que haga? —dijo con la cabeza baja. No supe qué contestar.</p>
+
+        <p>No le iba a decir que se alejara de Nethan, porque no le quería prohibir que andara con nadie, no tengo ese derecho. Nadie lo tiene. Ella ya sabía qué me molestaba, y qué era lo que yo quería que hiciera, pero quería que yo se lo dijera a la cara. Que le dijera que odiaba a Nethan y que sentía que me apuñalaban cada vez que abrazaba a otro chico que no era yo. Yo era consciente de eso. Así que traté de ser lo más honesto que pude, sin constatar ni una sola de las cosas que sabía que ella quería escuchar.</p>
+
+        <p>&emsp;&emsp;—No te puedo obligar a hacer nada. Es tu decisión. Pero si necesito que sepas que Nethan no me parece un tipo que sea buena influencia para ti. Quiero decir, hace tan solo unas horas te incitó a escaparte de clases solo tú y él, y no sé si es normal en todos los novios o no pero, al menos a mí, eso me incomoda. Pero no te puedo obligar a hacer nada que no quieras, pero tampoco me puedes obligar a pasar siempre por situaciones incómodas como esa.</p>
+
+        <p>&emsp;&emsp;—Lo sé, pero me escapé con él porque necesitábamos hablar. Su novia terminó con él ayer, y él se quería hacer daño a sí mismo. Yo traté de decirle que eso no estaba bien, pero luego leí tus mensajes. Y…</p>
+
+        <p>&emsp;&emsp;—¿Y? —pregunté, cuando una idea se cruzó en mi cabeza como una bala. No quería que esa idea fuera verdad, pero entre más pensaba en ello, más cierto me parecía. Sea no se había quitado su suéter en todo el día —que había sido particularmente caluroso—.</p>
+
+        <p>En esa milésima de segundo comprendí el porqué. Aunque no lo quería creer en lo absoluto, con mi corazón a punto de explotar, se volvió un hecho, cuando mis ojos cristalizados alcanzaron a notar las marcas en sus muñecas.</p>
+
+
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Memoria 11/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #800080; text-align: center;border-color: #800080;font-size:20px;">Siguiente...</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Melodías y Memorias.php#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #57a639; text-align: center;border-color: #57a639;font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+  <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['Holding Hands','In Your Pocket'], trackNames = ['Quinn XCII feat. Elohim','Maroon 5'], albumArtworks = ['_1','_2'], trackUrl = ['memoria10.1.mp3','memoria10.2.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+</body>
+</html>
