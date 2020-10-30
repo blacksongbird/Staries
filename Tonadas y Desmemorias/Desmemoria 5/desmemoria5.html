@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Desmemoria 5</title>
+  <link rel="stylesheet" href="../../css/styletyd.css">
+  <link rel="stylesheet" href="../../css/textmessage.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <script src="../../js/removeBanner.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttontyd.css">
+  <link rel="stylesheet" href="../../css/playertyd.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>insomnio</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/tyd/Oblivion5Art.png" class="active" id="_1">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Desmemoria 5</span><br><br><br>
+    <span class="byline">Tonadas y Desmemorias - Gabriel Lobo</span>
+    <p>No debí haberle escrito esa noche, pero ya sabes cómo es. Nadie es totalmente lúcido durante las profundas y avanzadas horas de la noche, sobre todo cuando es porque ni siquiera alcanzas a conciliar el sueño.</p><br><br>
+    
+    <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea1.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message sent">
+                 Escuché la canción. Me gustó mucho. Y lamento que todo haya acabado como acabó, de verdad.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Me alegra que te haya gustado, es todo lo que he estado sintiendo...
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  He estado pensando mucho en todo esto, tal vez más de lo que debería.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Solo quiero que sepas que hice lo que hice porque te amo, aunque no fuera lo que yo quería.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Lo sé y te lo agradezco muchísimo.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    De nada...
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Creo que dejarnos ir es lo mejor para ambos, después de todo.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Eso creo...
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Hay algo más que quieras decirme antes de hacerlo?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Solo que jamás podré entender cómo de la noche a la mañana, todo cambió, aún me duele la forma tan fría en la que actuaste. Si hubiera sabido que ese día sería el último... te habría abrazado un poco más...
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Y por qué no lo hiciste?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    No lo sé... No sabes cómo me habría gustado que las cosas funcionaran.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Por qué?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    ¡Porque eras un chico increíble, Ty! ¿Cómo no iba a estar alegre de tenerte a mi lado?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Era?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Siempre fuiste alguien a quien yo admiraba demasiado, tanto por tu personalidad como por tus virtudes. Fuiste quien más marcó mi vida en toda mi adolescencia. Pero ver como simplemente te rendías después de haber luchado tanto por conquistarme, me rompió.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Habría e incluso ahora haría lo imposible por ti, ¿pero tú habrías hecho lo mismo por mí?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    ¡Claro que sí! Y me duele que dudes así de mí. Entiendo que tal vez no fui muy atenta, pero jamás llegué a considerarte una molestia con que lidiar.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Lo lamento, lo sé. Sé que habría sido mejor para ti si nada de lo nuestro nunca hubiera pasado.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    No, no es cierto. Decir que me arrepiento de todo lo que pasamos es una estupidez. Claro que no me arrepiento de haber conocido a una persona tan maravillosa.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Por qué no? Piénsalo, ¿cómo crees que estaría todo ahora?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    No me arrepiento. ¿Tú sí?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  A como acabaron las cosas, no estoy seguro. Normalmente diría que no. Quiero decir. Sin duda estos fueron los mejores y peores 4 años de mi vida. Y fueron gracias a ti, a Roy, a Rebecca, Adam, mis padres y demás personas que siguen entrando y saliendo de mi vida.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Está bien...
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Pero luego pienso en que quizás tú habrías sido más feliz esos años si nunca hubieras estado conmigo. Te habría ahorrado todo este sufrimiento, dolor, momentos incómodos, estrés y cólera. Y eso me hace dudar.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Yo no me arrepiento. Y volvería a pasar por eso con tal de estar contigo. De conocerte de nuevo y tal vez de enamorarme más pronto.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Aunque hubiera acabado así? ¿Sufrirías todo esto de nuevo solo por los momentos que estuve contigo?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    ¡Sí!
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Por qué?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    ¿Y por qué no?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Sabes que esto me hace mucho más difícil decirte adiós, ¿verdad? Porque estoy dispuesto a que todo vuelva a ser como antes.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    No quiero seguir siendo el detonante de tu ansiedad. Pero... como dice la canción: "Tal vez en otro momento, tal vez en otra vida", ¿no?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  ¿Cómo sé que en otra vida me seguirás amando igual?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Tú nunca lo vas a saber, pero esa es la idea, ¿no?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+        </div>
+      </div><br><br>
+    
+    <p>Y así terminó. Quizás no fue tan dramático como lo narré. Me gustaría poder presumir que hice todo lo que hice con la cabeza en alto. Pero no puedo. Quizás habría sido más fácil decir "Las cosas solo no funcionaron". Es decir, si prestas atención, toda esta historia se resume a eso, ¿no? Nunca más volví a hablar con ella. Quizás nos vimos y nos reconocimos por los pasillos más de una vez en el transcurso del año pasado. Pero lo cierto es que nunca volví a hablar verdaderamente con ella. De ahí en adelante, me cerré por completo, pasando de ser un libro abierto a un sarcófago sellado por dentro para ella. Y es que sabíamos que la amistad ya no era una opción. Te lo dije, ¿no? Tu corazón siempre verá algo más allí donde alguna vez hubo algo más.</p>
+    
+    
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Desmemoria 6/loader.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #e77320; text-align: center;border-color: #e77320; font-size:20px;">Siguiente</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Tonadas y Desmemorias.php#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #083244; text-align: center;border-color: #083244; font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+    <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['I Need to Know'], trackNames = ['Sleeping With Sirens'], albumArtworks = ['_1'], trackUrl = ['desmemoria5.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+</body>
+</html>
