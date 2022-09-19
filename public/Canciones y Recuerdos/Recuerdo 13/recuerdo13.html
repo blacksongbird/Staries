@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Recuerdo 13</title>
+  <link rel="stylesheet" href="../../css/stylecyr.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <script src="../../js/removeBanner.js"></script>
+
+</head>
+<body>
+<!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        let app = firebase.app();
+        StariesAccount.Observer();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttoncyr.css">
+  <link rel="stylesheet" href="../../css/playercyr.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1 style="font-family:'Montserrat Alternates';color:pink;">El Sobre Rosa</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/cyr/Flashback13Art.png" class="active" id="_1">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                  <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Recuerdo 13</span><br><br><br>
+    <span class="byline">Canciones y Recuerdos - Gabriel Lobo</span>
+
+      <p>&emsp;&emsp;—¡¿Le escribiste una carta?!</p>
+
+      <p>&emsp;&emsp;—Es lo que te estoy diciendo —contesto—, necesito tu ayuda para poder dársela. Ocupo que la alejes de su grupo para poder dársela a solas.</p>
+
+      <p>&emsp;&emsp;—Está bien, vamos a buscarla —dice sin importar lo que yo quisiera hacer en ese momento.</p>
+
+      <p>Nos habían pedido ser puntuales por un motivo. El obispo que nos confirmaría tenía un horario ajetreado. Era necesario que la misa empezara a las 17:00 o antes. Pero en el lapso previo a eso, pasaron muchísimas cosas. Ya le había dado su respectiva carta a Roy. Ahora le tocaba a Sea. Pero era mucho más complicado. Era una cuestión social. Llevábamos alrededor de 8 meses sin dirigirnos la palabra y ahora debía acercarme a hablarle como si nada hubiera pasado. Pero, ¿de verdad debía darle la carta?, ¿cambiaría algo para bien?, ¿o peor aún, para mal?</p>
+
+      <p>&emsp;&emsp;Antes de tener tiempo para caer en mi propio espiral de pensamientos, Monny reunió a todo el grupo de Piedad y les contó de mi plan para pedirles ayuda —por Dios, era una catástrofe social, una inmensa catástrofe social—. Pero esto solo sirvió para que tú te dieras cuenta de lo que pasaba por mi cabeza además de tí esa noche. No, no quería volver con Sea. Después de cuatro años me cansé de rogar y decidí seguir adelante. Esa carta tenía como único propósito arreglar las cosas para facilitar ese proceso para ambos. A mí, ese sobre y estas páginas me han ayudado a superarlo todo. Después de todo, yo sabía que era mucho más sencillo superar lo que pasó al olvidar lo que yo sentía por ella. Al fin y al cabo —y esto es algo que ella no sabe y no lo sabrá a menos de que lo lea, cosa que dudo después de la conclusión que tuvo su obra predecesora—, me enamoré de otra chica mientras salíamos. No se lo dije nunca al terminar por dos motivos. El primero, ella ya había pasado por una situación similar con su novio de la escuela; yo no planeaba rebajarme a ese nivel, preferí terminar antes que seguir luchando por enterrar mi sentimientos mientras fingía otros por ella. Y segundo, para evitar lastimarla de más, aunque lo terminó sospechando al final de nuestra relación —gracias, Roy—. Y creo firmemente en que esto se dio porque me cansé de esperar. Siempre que hacía algo por ella, contaba con que ella haría lo mismo por mí, siempre. Contaba con que todo era recíproco. Pero creo que, en un punto de nuestra relación, dejé de creer eso. Y fue entonces cuando mi corazón se cansó de amar en vano y encontré a otra persona que llamó mi atención. Fue a principios del año. Recuerdo como, en la semana de ambientación, unos chicos de la generación 2019 corrían con cornetas gritando y motivando a otros a entrar a un proceso llamado Confirma. Yo sabía desde que entré al instituto que llevaría la Confirma en décimo año. Lo que nunca me imaginé era lo que pasaría gracias a eso. Nos entregaron una boleta para matricular en el proceso y yo la guardé y me la llevé a casa sin dudarlo.</p>
+
+      <p>&emsp;&emsp;Cuando llegó el primer jueves de Confirma, la primera catequesis, me habían dicho que Roy estaría conmigo para el proceso, cosa que me alegraba, ya que pensaba que podríamos recuperar un poco de nuestra amistad en ese círculo social. Pero para mi desgracia, no. No estuvimos juntos. Yo acabé en el grupo de Piedad con Monny. Pero Roy fue asignado a otro grupo con Patrick. Y Sea terminó en otro y, finalmente, acabamos todos separados y en grupos distintos. Pero eso era una bendición para mí, después de todo.</p>
+
+      <p>&emsp;&emsp;Mira, detesto parecer un escritor enamorado. Hace que pienses que es lo único que soy y que no hay nada más detrás de eso, pero me gusta pensar que eso no es cierto. Sin embargo, ese día... ese día me di cuenta de lo que la palabra "enamorarse" realmente significa. Es todo lo que te he dicho hasta ahora, un delay, una estrella, un juego de miradas, una sonrisa, o todas juntas a la vez, que fue lo que me ocurrió esa noche. Es lo que esa chica es, todo eso junto.</p>
+
+      <p>&emsp;&emsp;Resultó que cuando llegué y nos reunimos para conocer a nuestros respectivos grupos, los observé con detenimiento. Vi a mis catequistas, personas a las que llevaré por siempre dentro de mi corazón por todo lo que hicieron por mí. Después de mirar con más detenimiento, un rostro resaltó por sobre los demás. Era una chica que recuerdo haber visto en mi generación más de una vez, pero de la que ahora jamás dejaría pasar su presencia desapercibida. Tenía una mirada tierna y compasiva, que me dejaba interesado por saber qué había detrás de las ventanas a su alma. Quería conocerla. Es decir, siempre me ocurre. Deseo conocer a la persona de la que me enamoro porque así, cada vez que descubro una faceta nueva en su personalidad o en su forma de ser, me atrapa aún más. Así que sí, quería conocerla, necesitaba conocerla. Quería saber qué pasaba por aquella mente tan intrigante y maravillosa. Su cabello negro no hacía más que resaltar su belleza, y cada vez que cruzábamos miradas, ¡toma!, ¡otro delay!</p>
+
+      <p>&emsp;&emsp;Sabía que no estaba bien sentir esto en mi situación. Pero por Dios, ¿cómo lo hacía parar? Nunca había sentido lo que sentí ese día al ver a esa chica. Y sin duda no había sentido antes nada de lo que siento por ella ahora. Pero no, no era algo tan simple. Traté de ignorar mis propios sentimientos y seguir con mi relación con Sea. Pero ahí estaba. Una vez que le prestas atención a alguien en particular, es imposible dejar de verlo —o verla—. Es como cuando encuentras un error en tu película favorita. Quizás la primera vez no lo notaste, pero una vez que los ves, es imposible volver a ignorarlo. Y así me ocurrió con esta chica. Caminaba por los pasillos y ¡bum! ¡otro delay más! ¡y otro y otro más! Y era más frecuente cuando comenzó a reconocer mi presencia. Cuando empezamos a cruzar miradas por el Instituto o a sonreírnos el uno al otro, ya era demasiado tarde. No podía evitarlo. Y no, a pesar de todo, ya había dejado de ser simple atracción, al menos para mí —lo sé, me dejo llevar muy fácilmente. Pero soy un emocional, no es mi culpa—. Luego, por este motivo oculto y muchos otros más que mencionaré después, terminé con Sea —y en muy malos términos—.</p>
+
+      <p>&emsp;&emsp;Cambié el curso de mi primer libro y sí, al final, le dediqué el segundo a esa chica. ¿Un poco apresurado? Para mí, creo que sí. Pero no quería que me ocurriera lo que me pasó con Sea. No quiero esperar un año entero a que alguien más se fije en mí. Así que sí, me propuse a conseguir la atención de aquella chica siendo yo mismo, sin fingir nada en absoluto. Y si le gustaba lo que había detrás del ansioso escritor, maravilloso, y si no, pues al menos viviré tranquilo sabiendo que lo intenté. Después de todo, el que no arriesga no gana, ¿verdad Frank?</p>
+
+      <p>&emsp;&emsp;Así que sí, todo esto, en su gran mayoría, es por esa chica que conocí —no quiero decir que todo gira en torno a ella, pero fue un motor crucial en el desarrollo de todo lo que he escrito hasta ahora (y de lo que me falta por narrar)—. Y Sea, después de todo lo que pasó, estoy seguro de que me odia. No me extraña. Solo espero que algún día pueda perdonar todo lo que pasó entre nosotros, como yo lo estoy tratando de hacer. Y sí, le deseé lo mejor en esa carta. Ese sobre era una despedida. Ya no había nada más que hacer. Así que fui y me senté a su lado cuando se encontraba sola, y tuvimos nuestra primera conversación después de 124 días —aproximadamente— de silencio. Rompí la ley del hielo y sí, tú estabas ahí, y eso fue lo que más preocupado me tenía. No quería que te hicieras una idea errónea de mis intenciones. Así que fui lo más breve posible y exclamé tragándome mi ansiedad.</p>
+
+      <p>&emsp;&emsp;—Hola.</p>
+
+      <p>&emsp;&emsp;—Hola —exclamó confundida.</p>
+
+      <p>&emsp;&emsp;—Te ves muy bien —dije por cortesía, después de todo, yo no la odio.</p>
+
+      <p>&emsp;&emsp;—Tú también —asintió siguiendo el código social de falsa contestación (sí, así es como me gusta llamarlo).</p>
+
+      <p>&emsp;&emsp;—Yo... te traje esto... —dije mientras metía mi mano en el bolsillo interior de mis traje para sacar el sobre rosa. Luego, lo extendí y se lo dí, cero contacto físico, como debía de ser.</p>
+
+      <p>&emsp;&emsp;—¿Y esto? —pregunta como si no se hiciera una idea de lo que es.</p>
+
+      <p>&emsp;&emsp;—Es una carta. Por tu Confirma.</p>
+
+      <p>&emsp;&emsp;—Gracias... —dijo sin molestarse en disculparse por no darme nada, a diferencia de Roy. Pero después de todo, ¿de qué servía disculparse si ni siquiera se le pasó por la cabeza?</p>
+
+      <p>&emsp;&emsp;—Léela luego —dije mientras me levantaba de la banca, tratando de hallarte a ti con la mirada.</p>
+
+      <p>&emsp;&emsp;—¿Luego? —preguntó con desánimo. "Creo que debí de dársela después, ahora puede que se distraiga por mi culpa durante la misa" dije para mis adentros—.</p>
+
+      <p>&emsp;&emsp;—O como prefieras —indiqué para que fuera su decisión esperar o leerla antes de la Confirma.</p>
+
+      <p>&emsp;&emsp;—Está bien. ¿Ya saludaste a mi mamá?</p>
+
+      <p>&emsp;&emsp;—No, ¿dónde está? —la madre de Sea siempre fue buena conmigo, nunca me juzgó por lo que pasó entre Sea y yo. Y hoy en día me sigo preguntando si todavía cree que salimos, ya que su trato para conmigo no ha cambiado ni un poco en estos 3 años que tengo de conocerla.</p>
+
+      <p>&emsp;&emsp;—Creo que está por allá —indica mientras señala a las bancas que estaban a su izquierda.</p>
+
+      <p>&emsp;&emsp;—Okey, iré a buscarla —dije mientras me alejaba de allí tan rápido como pude sin tener que correr en la iglesia. Lo cierto es que ni siquiera pude encontrar a la madre de Sea. En lugar de eso, fui a ver cómo estaba mi familia y luego, cuando finalmente apareció, la saludé y la abracé como siempre. Después de eso, fui a sentarme en mi lugar a esperar a que comenzara la ceremonia. Fue entonces cuando vi que estabas con Sea y con Monny hablando. Me mirabas de vez en cuando, y por la expresión de Monny, era obvio que hablaban de mí. Pero nunca creí que fuera porque Sea estuviera molesta por haberle dado ese sobre.</p>
+
+      <p>Fue decepcionante, pero no me dolió tanto como creí que me dolería. Pensé que con eso al menos no me seguiría haciendo la vida imposible o manteniendo esa ley del hielo. Pero todo sigue igual. Pero no me importó. Porque esa noche pude confirmarme al lado de la chica de la que me enamoré desde hace tanto —bueno, en realidad estabas frente a mí, no al lado, pero los tecnicismos ya no importan—. Así que, después de tres años, dejé ir a Sea para bien. Me despedí en esa carta de la única forma en que sé hacerlo y lo hice para siempre. Era hora de dejar eso atrás y avanzar.</p>
+
+      <p>&emsp;&emsp;Y teniendo a esa chica ahí, justo frente a mí —y debo confesar que estaba haciéndome imposible concentrarme en misa—, ese futuro que tenía por delante se veía bastante prometedor. Era un futuro hermoso y brillante como un destello caído del cielo. Y sí, ese destello, después de todo, eras tú...</p>
+
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Recuerdo 14/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #0da6c2; text-align: center;border-color: #0da6c2; font-size:20px;">Siguiente...</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Canciones y Recuerdos.html#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #b7c813; text-align: center;border-color: #b7c813; font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+  <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['Good Things Fall Apart'], trackNames = ['ILLENIUM feat. Jon Bellion'], albumArtworks = ['_1'], trackUrl = ['recuerdo13.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+</body>
+</html>

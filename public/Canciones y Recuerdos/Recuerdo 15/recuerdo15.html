@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Recuerdo 15</title>
+  <link rel="stylesheet" href="../../css/stylecyr.css">
+  <link rel="stylesheet" href="../../css/textmessage.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="../../js/removeBanner.js"></script>
+
+</head>
+<body>
+<!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+      let app = firebase.app();
+      StariesAccount.Observer();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+</script>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttoncyr.css">
+  <link rel="stylesheet" href="../../css/playercyr.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <style media="screen">
+    #enlace_desactivado {
+    pointer-events: none;
+    cursor: default;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="progress"></div>
+  <br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>Fuegos Artificiales</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/cyr/Flashback15Art.png" class="active" id="_1">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                  <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Recuerdo 15</span><br><br><br>
+    <span class="byline">Canciones y Recuerdos - Gabriel Lobo</span>
+
+      <p>Te seré honesto. No fue sencillo abordar lo ocurrido a lo largo de todos estos recuerdos. Elegir la canción que le tocaría a este en particular fue muy difícil. Tengo tantas canciones que me recuerdan a ti que ya no sabía cuál de todas era la indicada. Volvamos a donde nos quedamos la última vez, ¿sí?</p>
+      <span class="byline">+10 de Octubre, 2019+</span><br><br><br>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/star.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Star</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message sent">
+                  Su nombre es Star porque es lo que significa el nombre de la chica que me gusta, aparte de que el cuento está directamente relacionado con las estrellas. Por eso, una vez que se me ocurrió, no pude sacarme la idea de la cabeza.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+        </div>
+      </div><br>
+      
+      <p>&emsp;&emsp;—¿era esa la respuesta que esperabas?.</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/star.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Star</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    ¡Eso es genial! Hey… solo pregunto, ¿soy yo?
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+        </div>
+      </div><br>
+      
+      <p>&emsp;&emsp;—si ya conocías la respuesta, ¿qué diferencia hacía que te lo dijera yo? ¿Acaso no viste todas las señales que te lo afirmaban durante todo este año?</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/star.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Star</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message sent">
+                  Pues no lo sé.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+        </div>
+      </div><br>
+      
+      <p>&emsp;&emsp;—contesté de manera sarcástica, al menos desde mi perspectiva.</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/star.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Star</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message sent">
+                  Pues no lo sé.
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message sent">
+                  ¿Qué dirías si mi respuesta fuera un sí?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+                </div>
+                <div class="message received">
+                    Respetaría lo que sientes y no te trataría diferente por eso.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+        </div>
+      </div><br>
+      <p>&emsp;&emsp;—escuché el retumbar del ritmo de FRIENDS a lo lejos, puedo jurarlo.</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/star.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Star</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    Respetaría lo que sientes y no te trataría diferente por eso.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message received">
+                    Trataría de seguir hablando contigo porque encontré en ti una verdadera amistad.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+        </div>
+      </div><br>
+      
+      <p>&emsp;&emsp;—no me sorprendería si admitieras que tenías este mensaje de rechazo preparado antes de que te contestara; todo me parecía demasiado orquestado.</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/star.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Star</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    Respetaría lo que sientes y no te trataría diferente por eso.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message received">
+                    Trataría de seguir hablando contigo porque encontré en ti una verdadera amistad.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message received">
+                    Pero ahora mismo no estoy segura de si quiero estar con alguien o si me gusta alguien en lo absoluto.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+        </div>
+      </div><br>
+      
+      <p>&emsp;&emsp;—¿no estabas segura de si querías estar con alguien, o conmigo?</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/star.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Star</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    Respetaría lo que sientes y no te trataría diferente por eso.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message received">
+                    Trataría de seguir hablando contigo porque encontré en ti una verdadera amistad.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message received">
+                    Pero ahora mismo no estoy segura de si quiero estar con alguien o si me gusta alguien en lo absoluto.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message received">
+                    Pero sí me importas, de verdad.
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+        </div>
+      </div><br>
+      <p>&emsp;&emsp;—y ese fue el feedback motivacional.</p>
+      
+      
+      <p>Debo admitir que fue un rechazo con clase, pero, ni siquiera hoy en día, estoy seguro de si fue un rechazo en verdad o no. Pero nunca volvimos a hablar del tema, ¿o sí?</p>
+      
+      <p>&emsp;&emsp;Te confesé todo lo que había hecho hasta ahora, pero lo cierto es que me encontraba en un drama romántico del que solo yo formaba parte, otra vez. No fue tu culpa, pero si hubiera mantenido esa barrera en su lugar, lo ocurrido no me habría dolido tanto como me dolió al tener la guardia baja. Trato de que el enojo no me domine al escribir, porque, cuando ocurre, generalmente no tengo forma de distinguir la causa verdadera de mi ira, que tiende a ser contra mí mismo.</p>
+      <span class="byline">+28 de Octubre, 2018/2019+</span>
+      <p>Volvamos de regreso a noveno año. Era el día del cierre de la Expo. Mi mente, más allá de estar en las exposiciones para los jueces, estaba centrada en Sea. Llevábamos un largo y extenso mes en un limbo de relación, que era parecido a un noviazgo más que a un simple flirteo de otoño.</p>
+      <p>&emsp;&emsp;Estuve todo el día esperando y pensando en qué hacer. Finalmente Sea saldría de su martirio tras una Expo difícilmente concluida. Pero lo logró. Como dije, no puedo comparar su fortaleza con nada, ni siquiera ahora. Quería sorprender a esa chica especial con un obsequio, tanto en el 2018 como en el 2019. ¿La diferencia? La chica de la que hablo es distinta en ambas épocas. Primero el mar y luego la estrella.</p>
+      <p>&emsp;&emsp;Comencemos con el 2018. Mamá y Papá pasaron todo el día de ese fin de semana buscando tulipanes para ayudar a su primogénito a complacer a su enamoramiento juvenil. Aprecio la paciencia que ambos tuvieron conmigo en esa época. Lidiar con un hijo emocional y enamorado es muy difícil, y más cuando sabe que es correspondido. No conseguimos tulipanes —que era su flor favorita—, pero me las arreglé para darle una flor cuyo nombre no logro siquiera recordar. Pero, como cualquier flor, era hermosa, y era lo más importante del detalle. 17:30. Salí casi huyendo del aula, dejando atrás mis cosas, rebasando a las personas que se aglomeraban en los pasillos del instituto, como turistas en una sobre poblada ciudad desconocida, fluyendo en diferentes direcciones, pero todos a la misma velocidad. Subí las escaleras hacia el ala de Estudios Sociales, en la cual estaba ubicado el proyecto de Sea y Patrick.</p>
+      <p>&emsp;&emsp;Esperé en la puerta alrededor de 2 o 3 minutos hasta que ella salió de la clase, casi corriendo. Cuando me vio con la flor, ni siquiera se detuvo a recibir el detalle, sino que me tomó de la mano y bajamos casi corriendo hacia el patio principal del campus. Más abajo, me dio las gracias, y buscamos a todos los demás para ver la clausura de la feria juntos. Sería la última vez que perteneceríamos todos a un mismo grupo, a un mismo todo. Con nuestras especialidades elegidas, lo más probable era que ya no nos veríamos tan seguido, y pues, ya sabes lo que ocurrió luego.</p>
+      <p>&emsp;&emsp;En el 2019, sin embargo, las cosas transcurrieron de manera distinta. Tú y yo no somos ni hemos sido nada más que amigos. Sin embargo, decidí darte algo por tu esfuerzo en la Expo. Me habías dicho que estabas harta de todo. Pero no es algo que no le pase a cualquier chico de nuestra edad.</p>
+      <p>Lo que verdaderamente me asustó fue que dijiste que querías irte a Estados Unidos, con tu familia. Este hecho me heló la sangre.</p>
+      <p>&emsp;&emsp;Es decir, ¿cómo te sientes al perder a una persona que ni siquiera te considerará a ti como una pérdida al marcharse? Y lo peor de todo es que, incluso ahora, tengo la certeza de que serías más feliz allá, porque tu corazón siempre ha estado con tu familia, y jamás te podré mostrar lo que estar enamorada realmente significa si el amor que necesitas está a miles de kilómetros de distancia. Pero aún así, no me podré arrepentir de algo que no he siquiera intentado, mas sí del hecho de ni siquiera haber tratado.</p>
+      <p>&emsp;&emsp;Compré un chocolate —uno pequeño, no quería hacerte sentir incómoda con el gesto—, y preparé la última nota del año. Te escribí y te pregunté si podíamos vernos durante la clausura. Preferiste verme antes —perdón, fue tonto pedirte que fuera durante—. Bajé las escaleras del edificio de informática, tras la premiación de la feria de la especialidad, salí para darte el gesto y despedirme, ya que sabía que vernos durante las pruebas finales del curso sería difícil, por lo que sabía que esa sería la última vez que te vería durante el año.</p>
+      <p>&emsp;&emsp;—Hola —exclamé mientras abría mi mochila para darte el recuerdo de mi proyecto que me habías pedido. Se trataba de un pequeño pulpo de peluche, color azul, ya que sabía que era uno de tus colores favoritos—. Es un pequeño pulpo de recuerdo de mi proyecto. Se supone que es uno de los animales más maternales del reino animal —y de nuevo comienzas a irte por las ramas, como siempre, Tyler—.</p>
+      <p>&emsp;&emsp;—Aww, el pulpo es uno de mis animales favoritos, aunque no sabía eso —contestaste con amabilidad.</p>
+      <p>&emsp;&emsp;—Mira, te quería dar esto como un detalle por terminar tu feria —dije mientras te daba el chocolate—, y esta es la última nota del año —pusiste una mirada condescendiente y me agradeciste por el detalle—. Nunca te di las gracias por escucharme cuando te dije lo que sentía, y quería agradecértelo en persona.</p>
+      <p>Tras esperar un rato, te abracé y creo haberte dicho algo apresuradamente. Quizás no lo recuerde con claridad —y si es así, entonces ignora de lo que te hablo, pero si no, entonces ambos sabemos lo que te dije esa noche—. Lo cierto es que bajé a la cancha del campus sintiéndome muy bien. Finalmente el año más difícil de mi secundaria hasta ahora había acabado, y todo mejoraría de ahora en adelante, ¿no?</p>
+      <p>Fue entonces cuando recibí una llamada de Luis.</p>
+      <p>&emsp;&emsp;—¿Dónde estás? —muy directo, sin necesidad de un “hola, ¿cómo estás?”.</p>
+      <p>&emsp;&emsp;—Estoy por el planché. ¿Ustedes?</p>
+      <p>&emsp;&emsp;—En el último piso del edificio rojo. Corre para ver los fuegos artificiales.</p>
+      <p>Apresuré el paso y finalmente llegué al lugar en donde, hacía un año atrás, Sea me pidió que reanudáramos nuestra relación. Días más tarde me enteraría de que había invitado a salir a otro chico el mismo día, un año después. La vida cambia muy rápido. Pero el sentimiento fue el mismo, estando con Roy, Rebecca y Sea un año atrás, que al estar con Franklin, Ever, Luis y contigo. Quizás no vimos juntos los fuegos artificiales, pero ahí arriba, teniendo todo el mundo iluminado y lleno de luces, distinguí una estrella brillante que me ha seguido desde entonces. Y aunque para ti no haya sido más que un papel con un chocolate. Aunque no haya sido nada más que ocho meses de catequesis de Confirma. Un simple chico de informática, amante de las estrellas y de la escritura.</p>
+      <p>Aunque no haya significado nada para ti, para mí, fuiste la razón de mi alegría durante esa noche, y sabía a ciencia cierta que, aunque no estuviéramos juntos, mi corazón estaría siempre con aquella estrella que se elevaba, hermosa y trágicamente encantadora, por sobre todos los destellos de aquellos invaluables fuegos artificiales.</p>
+
+  </div>
+  <div class="col-md-12 text-center" style="z-index: 5;" align="center">
+            <a class="btn btn-coffee btn-border" href="../Recuerdo 16/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #0da6c2; text-align: center;border-color: #0da6c2; font-size:20px;">Siguiente...</a>
+            <br>
+            <a class="btn btn-coffee btn-border" href="../../Canciones y Recuerdos.html#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #b7c813; text-align: center;border-color: #b7c813; font-size:20px;">Volver al Índice</a>
+        </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+  <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['all the kids are depressed'], trackNames = ['Jeremy Zucker'], albumArtworks = ['_1'], trackUrl = ['recuerdo15.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recuerdo 16</title>
+    <link rel="stylesheet" href="../../css/stylecyr.css">
+    <link rel="shortcut icon" href="../../logo.ico">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+</head>
+
+<body>
+    <!-- update the version number as needed -->
+    <script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+    <script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+    <script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+    <script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+    <script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="../../__/firebase/init.js"></script>
+    <script src="../../firebase-utils.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          try {
+            let app = firebase.app();
+            StariesAccount.Observer();
+          } catch (e) {
+            console.error(e);
+          }
+        });
+      </script>
+    <!-- partial:index.partial.html -->
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/buttoncyr.css">
+        <link rel="stylesheet" href="../../css/playercyr.css">
+        <script src="../../js/removeBanner.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <style media="screen">
+            #enlace_desactivado {
+                pointer-events: none;
+                cursor: default;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="progress"></div>
+        <br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+
+        <div class="container">
+            <h1>Hasta Siempre, Hermano</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="app-cover">
+                <div id="bg-artwork"></div>
+                <div id="bg-layer"></div>
+                <div id="player">
+                    <div id="player-track">
+                        <div id="album-name"></div>
+                        <div id="track-name"></div>
+                        <div id="track-time">
+                            <div id="current-time"></div>
+                            <div id="track-length"></div>
+                        </div>
+                        <div id="s-area">
+                            <div id="ins-time"></div>
+                            <div id="s-hover"></div>
+                            <div id="seek-bar"></div>
+                        </div>
+                    </div>
+                    <div id="player-content">
+                        <div id="album-art">
+                            <img src="../../img/cyr/Flashback16Art.png" class="active" id="_1">
+                            <div id="buffer-box">Buffering ...</div>
+                        </div>
+                        <div id="player-controls">
+                            <div class="control">
+                                <div class="button" id="play-pause-button">
+                                    <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <span class="byline">Recuerdo 16</span><br><br><br>
+            <span class="byline">Canciones y Recuerdos - Gabriel Lobo</span>
+
+            <p>Un par de audífonos cambiaron mi vida, por más estúpidamente banal e infantil que parezca. Gasté dos dólares a cambio de un diamante en bruto, invaluable, oculto a plena vista. Daba la impresión de no contener nada más allá de su simpleza
+                y temple. Era fácil imaginar que no había nada más detrás de esa fachada. Todavía hoy me pregunto por qué fui yo el que lo encontró. Es decir, ¿qué razón yacía detrás de esa realidad? No lo sé. O tal vez sí. En una ocasión leí que, para
+                dejar una huella, sobresalir o redirigir el curso del mundo, debes primero cambiar tu mundo. No entendí esa frase al principio. Me pareció estúpido, incluso torpe. Pero ahora me di cuenta de que le debo una disculpa al autor intelectual
+                de esas palabras. No me tomaría mucho tiempo —bueno, si consideras 4 años como poco tiempo— entenderlas. Una vez tuve un amigo, de esos que Mamá alguna vez dijo que debía de cuidar como un tesoro escondido. Pasábamos juntos todo el tiempo.
+                Era algo espectacular. No podía creer la magnitud que poseía nuestra opuesta similitud. Ni siquiera hoy en día puedo creerlo.</p>
+            <p>&emsp;&emsp;—Ty, ¿has hablado con Roy estos días?</p>
+            <p>&emsp;&emsp;—No mamá, ¿por qué? ¿Qué pasó?</p>
+            <p>&emsp;&emsp;—Es que acabo de hablar con su madre. Dice que irá a estudiar a Estados Unidos estas vacaciones.</p>
+            <p>&emsp;&emsp;—¡Qué bien! ¿Y cuándo regresa? —pregunté inocentemente.</p>
+            <p>&emsp;&emsp;—Se supone que es un plan <i>piloto</i>, pero que van a ver si vuelve antes de que entren a clases o si se queda estudiando allá —contestó, demasiado atenta a mi reacción, cosa que me puso algo incómodo.</p>
+            <p>&emsp;&emsp;—Ahora que lo recuerdo, creo que él había dicho que necesitaba hablar conmigo sobre algo. Parecía importante. Seguro era eso —dije para evadir mi reacción—. ¿Y cuándo se va?</p>
+            <p>&emsp;&emsp;—Se supone que lo vamos a despedir el día de su cumpleaños. Para eso llamaba su mamá, para invitarte a la fiesta.</p>
+            <p>&emsp;&emsp;—Ah, okey…</p>
+            <p>Pasaron los días, y no, nunca hablamos de aquello que era tan importante decirme. Finalmente llegó el día de su fiesta de cumpleaños. Me gustaría pensar que tuve mucho tiempo para mentalizarme en que esa sería la última vez que lo vería, quizás
+                para siempre pero, ¿cómo te preparas para algo así?</p>
+            <p>&emsp;&emsp;La micro bus que nos llevaría a la finca en la que sería el evento no era muy grande. De hecho, no había estado en un espacio tan cerrado con Sea desde el año anterior. Y no estaba entre mis planes volver a estarlo, pero no me
+                quedó más remedio. El alcohol era un hecho, más que un rumor. Rebecca fue a comprarlo ella misma, acompañada por otro de los chicos de la fiesta. Era una fiesta <i>popular</i>, como tiendo a llamarlas, por lo que no calzaba nada allí.
+                Sea solía ser mi único escape de esas fiestas, ambos solíamos mantenernos sobrios mientras los demás bebían. Pero con todo lo que había ocurrido, no me extrañó verla bebiendo durante la fiesta. Los abuelos de Roy me miraban con ternura,
+                como si se compadecieran del
+                <i>duelo</i> por el que creían que yo debía de estar pasando. Era tiernamente irónico. No sé qué me dolió más. Ver a mi mejor amigo bebiendo y ofreciendo alcohol como los chicos de los que solíamos alejarnos hace un par de años, o saber
+                que todos eran conscientes de que se iría, pero lo ignoraban, o peor aún, que yo fuera el único que no lo sabía por él.</p>
+            <p>&emsp;&emsp;De cualquier manera, no podía dejar que eso le arruinara su noche. Después de todo, era su cumpleaños. Pasaron las horas y empecé a sentirme algo molesto. Estaba esperando a que me dijera lo que ocurriría. Pero tuve que forzar
+                el momento, bueno, casi.</p>
+            <p>&emsp;&emsp;—¿Y cuándo te vas? —preguntó otro de los chicos de la fiesta. Me miró con una expresión de culpa, como cuando alguien te descubre al decir una mentira.</p>
+            <p>&emsp;&emsp;—Ah sí, Ty, me voy —dijo como si hablara de lo más normal del mundo.</p>
+            <p>&emsp;&emsp;—¿A dónde?</p>
+            <p>&emsp;&emsp;—A Estados Unidos.</p>
+            <p>&emsp;&emsp;—¿De vacaciones? —pregunté fingiendo inocencia. Aunque no era extraño que saliera de El País Más Feliz del Mundo durante las vacaciones.</p>
+            <p>&emsp;&emsp;—No, a estudiar.</p>
+            <p>&emsp;&emsp;—¡Qué bien! ¿Y cuándo volverás? —dije deseando con todas mis fuerzas que Mamá hubiera escuchado mal, o que todos estuvieran actuando normal porque volvería en Enero, antes de comenzar las clases. Pero en el fondo, sabía que no.
+                Se iría y, de nuevo, no hay nada que puedas hacer para evitarlo, Tyler.</p>
+            <p>&emsp;&emsp;—No creo que vaya a volver. Voy a quedarme con mi tía —contestó.</p>
+            <p>&emsp;&emsp;—Entiendo… —dije para disimular mi shock.</p>
+            <p>Me alejé de la conversación poco a poco hasta hallarme solo en la fiesta. Me puse a pensar en lo que pasaría. Pasé la última noche que nos quedaba juntos aquí, viéndolos a todos beber y reír como si nada. Entonces Rebecca se me acercó. No
+                habíamos hablado a solas en meses.</p>
+            <p>&emsp;&emsp;—¿Estás bien?</p>
+            <p>&emsp;&emsp;—¿Tú ya lo sabías?</p>
+            <p>&emsp;&emsp;—¿Lo de Roy? Sí, nos lo dijo a todos hace unos días. ¿Por qué? ¿No te lo había dicho?</p>
+            <p>&emsp;&emsp;—No hasta ahora. De haber sabido que esta sería de verdad nuestra última noche, quizás habría hecho algo diferente.</p>
+            <p>&emsp;&emsp;—Lo entiendo, yo también me siento algo rara desde que me enteré. Sé que terminamos y todo pero ahora no sé, siento que las cosas ya no van a volver a ser lo que eran antes.</p>
+            <p>&emsp;&emsp;—No, eso es un hecho.</p>
+            <p>Después de unos minutos, convocaron para cantarle cumpleaños a Roy. Todos los invitados rodeamos la mesa donde se encontraba el pastel. Él se veía feliz. Aún se ve feliz, es lo que quiero creer. Ambos sabíamos que despedirnos sería demasiado
+                duro para los dos. Las palabras no hicieron falta. Lo abracé y dejé que sintiera lo que las palabras no alcanzaban a expresar. Nos habría gustado despedirnos como siempre, me habría encantado decirle “Te veo el lunes”. Lo cierto es que,
+                desde que se fue, no he hablado con él. No sé cómo. Ni siquiera sé qué decirle. Pero la pura verdad es que esa noche entendí el significado de aquella frase. Lo comprendí cuando, al regresar a casa, vi todo el mundo desde la ventana del
+                auto, y pude contemplar cómo nuestra amistad, con sus altibajos, buenos y malos momentos, Roy y Tyler, Tyler y Roy, habíamos cambiado el mundo.</p>
+
+        </div>
+        <div class="col-md-12 text-center" style="z-index: 5;" align="center">
+            <a class="btn btn-coffee btn-border" href="../Recuerdo 17/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #0da6c2; text-align: center;border-color: #0da6c2; font-size:20px;">Siguiente...</a>
+            <br>
+            <a class="btn btn-coffee btn-border" href="../../Canciones y Recuerdos.html#service" style="z-index: 3; margin-left: auto;margin-top: -160px; outline: none;color: #b7c813; text-align: center;border-color: #b7c813; font-size:20px;">Volver al Índice</a>
+        </div>
+
+    </body>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="../../js/scriptread.js"></script>
+    <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var playerTrack = $("#player-track"),
+                bgArtwork = $('#bg-artwork'),
+                bgArtworkUrl, albumName = $('#album-name'),
+                trackName = $('#track-name'),
+                albumArt = $('#album-art'),
+                sArea = $('#s-area'),
+                seekBar = $('#seek-bar'),
+                trackTime = $('#track-time'),
+                insTime = $('#ins-time'),
+                sHover = $('#s-hover'),
+                playPauseButton = $("#play-pause-button"),
+                i = playPauseButton.find('ion-icon'),
+                tProgress = $('#current-time'),
+                tTime = $('#track-length'),
+                seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0,
+                buffInterval = null,
+                tFlag = false,
+                albums = ['Old Friends'],
+                trackNames = ['Coldplay'],
+                albumArtworks = ['_1'],
+                trackUrl = ['recuerdo16.mp3'],
+                playPreviousTrackButton = $('#play-previous'),
+                playNextTrackButton = $('#play-next'),
+                currIndex = -1;
+
+            function playPause() {
+                setTimeout(function() {
+                    if (audio.paused) {
+                        playerTrack.addClass('active');
+                        albumArt.addClass('active');
+                        checkBuffering();
+                        i.attr('name', 'pause');
+                        audio.play();
+                    } else {
+                        playerTrack.removeClass('active');
+                        albumArt.removeClass('active');
+                        clearInterval(buffInterval);
+                        albumArt.removeClass('buffering');
+                        i.attr('name', 'play-circle');
+                        audio.pause();
+                    }
+                }, 300);
+            }
+
+
+            function showHover(event) {
+                seekBarPos = sArea.offset();
+                seekT = event.clientX - seekBarPos.left;
+                seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+                sHover.width(seekT);
+
+                cM = seekLoc / 60;
+
+                ctMinutes = Math.floor(cM);
+                ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+                if ((ctMinutes < 0) || (ctSeconds < 0))
+                    return;
+
+                if ((ctMinutes < 0) || (ctSeconds < 0))
+                    return;
+
+                if (ctMinutes < 10)
+                    ctMinutes = '0' + ctMinutes;
+                if (ctSeconds < 10)
+                    ctSeconds = '0' + ctSeconds;
+
+                if (isNaN(ctMinutes) || isNaN(ctSeconds))
+                    insTime.text('--:--');
+                else
+                    insTime.text(ctMinutes + ':' + ctSeconds);
+
+                insTime.css({
+                    'left': seekT,
+                    'margin-left': '-21px'
+                }).fadeIn(0);
+
+            }
+
+            function hideHover() {
+                sHover.width(0);
+                insTime.text('00:00').css({
+                    'left': '0px',
+                    'margin-left': '0px'
+                }).fadeOut(0);
+            }
+
+            function playFromClickedPos() {
+                audio.currentTime = seekLoc;
+                seekBar.width(seekT);
+                hideHover();
+            }
+
+            function updateCurrTime() {
+                nTime = new Date();
+                nTime = nTime.getTime();
+
+                if (!tFlag) {
+                    tFlag = true;
+                    trackTime.addClass('active');
+                }
+
+                curMinutes = Math.floor(audio.currentTime / 60);
+                curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+                durMinutes = Math.floor(audio.duration / 60);
+                durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+                playProgress = (audio.currentTime / audio.duration) * 100;
+
+                if (curMinutes < 10)
+                    curMinutes = '0' + curMinutes;
+                if (curSeconds < 10)
+                    curSeconds = '0' + curSeconds;
+
+                if (durMinutes < 10)
+                    durMinutes = '0' + durMinutes;
+                if (durSeconds < 10)
+                    durSeconds = '0' + durSeconds;
+
+                if (isNaN(curMinutes) || isNaN(curSeconds))
+                    tProgress.text('00:00');
+                else
+                    tProgress.text(curMinutes + ':' + curSeconds);
+
+                if (isNaN(durMinutes) || isNaN(durSeconds))
+                    tTime.text('00:00');
+                else
+                    tTime.text(durMinutes + ':' + durSeconds);
+
+                if (isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds))
+                    trackTime.removeClass('active');
+                else
+                    trackTime.addClass('active');
+
+
+                seekBar.width(playProgress + '%');
+
+                if (playProgress == 100) {
+                    i.attr('name', 'play-circle');
+                    seekBar.width(0);
+                    tProgress.text('00:00');
+                    albumArt.removeClass('buffering').removeClass('active');
+                    clearInterval(buffInterval);
+                }
+            }
+
+            function checkBuffering() {
+                clearInterval(buffInterval);
+                buffInterval = setInterval(function() {
+                    if ((nTime == 0) || (bTime - nTime) > 1000)
+                        albumArt.addClass('buffering');
+                    else
+                        albumArt.removeClass('buffering');
+
+                    bTime = new Date();
+                    bTime = bTime.getTime();
+
+                }, 100);
+            }
+
+            function selectTrack(flag) {
+                if (flag == 0 || flag == 1)
+                    ++currIndex;
+                else
+                    --currIndex;
+
+                if ((currIndex > -1) && (currIndex < albumArtworks.length)) {
+                    if (flag == 0)
+                        i.attr('name', 'play-circle');
+                    else {
+                        albumArt.removeClass('buffering');
+                        i.attr('name', 'pause');
+                    }
+
+                    seekBar.width(0);
+                    trackTime.removeClass('active');
+                    tProgress.text('00:00');
+                    tTime.text('00:00');
+
+                    currAlbum = albums[currIndex];
+                    currTrackName = trackNames[currIndex];
+                    currArtwork = albumArtworks[currIndex];
+
+                    audio.src = trackUrl[currIndex];
+
+                    nTime = 0;
+                    bTime = new Date();
+                    bTime = bTime.getTime();
+
+                    if (flag != 0) {
+                        audio.play();
+                        playerTrack.addClass('active');
+                        albumArt.addClass('active');
+
+                        clearInterval(buffInterval);
+                        checkBuffering();
+                    }
+
+                    albumName.text(currAlbum);
+                    trackName.text(currTrackName);
+                    albumArt.find('img.active').removeClass('active');
+                    $('#' + currArtwork).addClass('active');
+
+                    bgArtworkUrl = $('#' + currArtwork).attr('src');
+
+                    bgArtwork.css({
+                        'background-image': 'url(' + bgArtworkUrl + ')'
+                    });
+                } else {
+                    if (flag == 0 || flag == 1)
+                        --currIndex;
+                    else
+                        ++currIndex;
+                }
+            }
+
+            function initPlayer() {
+                audio = new Audio();
+
+                selectTrack(0);
+
+                audio.loop = true;
+
+                playPauseButton.on('click', playPause);
+
+                sArea.mousemove(function(event) {
+                    showHover(event);
+                });
+
+                sArea.mouseout(hideHover);
+
+                sArea.on('click', playFromClickedPos);
+
+                $(audio).on('timeupdate', updateCurrTime);
+
+                playPreviousTrackButton.on('click', function() {
+                    selectTrack(-1);
+                });
+                playNextTrackButton.on('click', function() {
+                    selectTrack(1);
+                });
+            }
+
+            initPlayer();
+        });
+    </script>
+
+</body>
+
+</html>

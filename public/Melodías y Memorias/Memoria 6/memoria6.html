@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Memoria 6</title>
+  <link rel="stylesheet" href="../../css/stylemym.css">
+  <link rel="stylesheet" href="../../css/textmessage.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="../../js/removeBanner.js"></script>
+
+</head>
+<body>
+  <!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+      let app = firebase.app();
+      StariesAccount.Observer();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+</script>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttonmym.css">
+  <link rel="stylesheet" href="../../css/playermym.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>Corazón Roto</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/mym/Memory6Art.png" class="active" id="_1">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Memoria 6</span><br><br><br>
+    <span class="byline">Melodías y Memorias - Gabriel Lobo</span>
+
+      <p>¿Alguna vez les ha pasado que, cuando un plato o vaso de vidrio se les cae y se quiebra, e intentan pegarlo para repararlo, acaban con muchos cortes en los dedos? Bueno, les haya pasado o no, es algo que suele ocurrir en un contexto como ese. Ya saben que no hablo literalmente de un vaso ni literalmente de tus dedos. Es una metáfora.</p>
+
+      <p>&emsp;&emsp;Después de un año siendo un amigo para Sea y tratando de “curar” su mal de amores, fui rechazado, y acabé con el corazón roto y pisoteado, aunque sabía que ella estaba peor que yo en ese sentido.</p>
+
+      <p>&emsp;&emsp;Cuando llegó el octavo año, me distancié un poco, a pesar de todo lo ocurrido. Roy y Rebecca fueron mi mayor apoyo en esta época de superación. No puedo decir que fue algo fácil, pero logré sobrepasar ese rechazo. Cambié mi peinado, pasando de tenerlo largo y descabellado a corto y ordenado. No fue algo muy evidente, pero esperaba que se notara cuando removieran mis frenos al año siguiente —tenía altas expectativas por ello—. Pero más que culpar al destino o a Sea por el rechazo, sentí que era mi culpa, y de la serpiente, sobre todo de esa maldita serpiente.</p>
+
+      <p>&emsp;&emsp;Febrero 14, ahí regresa nuestro drama, y no podía ser en un peor momento. Recibí alrededor de 3 cartas a lo largo del día —todas anónimas, obviamente—. Ya había recibido cartas de amor antes. De hecho, un año antes, en el Día de San Valentín del 2016, Sea me envió una carta. Fue una inmensa desilusión saber que había sido un reto por parte de su amiga.</p>
+
+      <p>&emsp;&emsp;Eventualmente, me enteré que eran de unas chicas de la sección 8-C, o sea, no eran mis compañeras de clase. De manera algo grosera las acabé llamando “acosadoras”, aunque ese término era más utilizado por los demás que por mí. Al igual que Sea, yo no tenía interés en nadie desde el rechazo. Sin embargo, nuevamente y sin saber por qué, le conté a Sea acerca de las cartas:</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    ¡Hey no! ¡Se supone que yo soy la única! <3 :c
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+            </div>
+        </div>
+      </div><br>
+
+      &emsp;&emsp;<p>—escribió, dejándome obviamente en shock. No tenía más opción que darle la razón mientras mi cabeza me maltrataba como si fuera otra persona dentro de mí.</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    ¡Hey no! ¡Se supone que yo soy la única! <3 :c
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Obviamente, pero aún no sé quiénes son exactamente
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+        </div>
+      </div><br>
+
+      <p>—contesté para no darle larga al asunto.</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    ¡Hey no! ¡Se supone que yo soy la única! <3 :c
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Obviamente, pero aún no sé quiénes son exactamente
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+            <div class="message received">
+                    Más te vale >:3
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+        </div>
+      </div><br>
+
+
+      <p>Sinceramente, ella es el enigma que más me ha costado comprender en toda mi vida. Es un enigma que tiene miles de encantos, pero ya no sabía qué más hacer para evitar caer en ellos. Porque, como dije, estaba harto de haberla esperado un año entero y luego ser rechazado en año nuevo. Sé que lo que ella sufrió fue algo terrible, pero yo también salí lastimado por eso.</p>
+
+      <p>Y fue ilusión tras desilusión una y otra vez desde ese día hasta abril de ese mismo año.</p>
+
+      <p>&emsp;&emsp;En séptimo año, en clase de ciencias, nuestro profesor nos explicó que cuando dos individuos se enamoran, pasan por un proceso. El primer punto se llama Limeranza, y es cuando ambos intercambian miradas, empiezan a pensar en el otro, y se preocupan por él o ella, y sobre todo, por si él o ella está enamorado o enamorada de ellos también. Luego de eso, llega la Segunda Limeranza, en la cual ambos confirman su gusto por el otro e inician una relación. Todo es amor, ternura, caricias, besos, ilusión y color de rosa. Tras un tiempo de esto, empieza la Etapa de los Celos. Tanto el chico como la chica empiezan a celarse entre sí. Y acá es cuando la relación se pone a prueba. Si en realidad confían el uno en el otro o si no es así. Y finalmente, si logran traspasar esta fase, la teoría de la Limeranza promete que alcanzarán el amor verdadero.</p>
+
+      <p>&emsp;&emsp;Durante estos años comprobé que, en su gran mayoría, esta teoría sí se cumple. A veces con un orden distinto, y a veces se da al pie de la letra. Pero ese no es el punto de la teoría. El punto es que todas las relaciones pasan por esas fases eventualmente. Solo que yo desearía no haberlas sufrido de una manera tan dura.</p>
+
+      <p>&emsp;&emsp;Mi relación con Sea siempre ha sido similar a un sube y baja. Desde que la conocí, mi vida emocional estuvo repleta de terribles altibajos. Y eso me afectó en el colegio, mucho. Mi nivel académico decayó bastante y mi estrés subió por los cielos. Sin embargo, a finales del mes de abril, hablé con Sea:</p>
+
+      <p>&emsp;&emsp;—Oye Sea. ¿Puedo hablar contigo?</p>
+
+      <p>&emsp;&emsp;—Está bien —en este punto, tuve que reunir todo el valor y dejar de pensar en las posibles respuestas que ella me pudiera arrojar. Estos son de los momentos de mayor estrés para mí —al igual que para la mayoría de la gente—, pero como no quería prolongar esa agonía, simplemente dije lo que necesitaba decirle. Tras caminar un rato sumidos en el silencio incómodo a través de los pasillos, inhalé una enorme bocanada de aire, la miré directamente a los ojos y exclamé:</p>
+
+      <p>&emsp;&emsp;—Me gustas, Sea. Aún me gustas, mucho. Y sé que debe ser molesto tener a un chico persiguiéndote, pero simplemente es algo que necesitaba decirte, en persona esta vez.</p>
+
+      <p>Tras otro incómodo silencio, que fue de aproximadamente dos o tres segundos —aunque se sintió como una eternidad—, ella sonrió.</p>
+
+      <p>&emsp;&emsp;—Tú también me gustas —dijo con alegría.</p>
+
+      <p>Tardé aproximadamente 10 o 15 segundos asimilando lo que acababa de oír. Luego de un pequeño instante, le hice una propuesta.</p>
+
+      <p>&emsp;&emsp;—¿De verdad? —dije, creyendo que se trataba de una broma o un chiste.</p>
+
+      <p>&emsp;&emsp;—¡Sí! ¡Por supuesto!</p>
+
+      <p>&emsp;&emsp;—Entonces, ¿Quieres ser el hada que rellene mis contenedores de corazón? —para los que no son fanáticos de la saga, es una referencia a Zelda, el juego que nos unió.</p>
+
+      <p>&emsp;&emsp;—¡Sí! —asintió entre risas.</p>
+
+      <p>Así comenzó mi relación con Sea Berry —sí, tiene un peculiar apellido—. Y fue así como yo, Tyler Davidson, me convertí, por primera vez, en el chico más feliz del mundo.</p>
+
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Memoria 7/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #800080; text-align: center;border-color: #800080;font-size:20px;">Siguiente...</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Melodías y Memorias.html#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #57a639; text-align: center;border-color: #57a639;font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+  <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['A Different Way'], trackNames = ['DJ Snake feat. Lauv'], albumArtworks = ['_1'], trackUrl = ['memoria6.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+</body>
+</html>

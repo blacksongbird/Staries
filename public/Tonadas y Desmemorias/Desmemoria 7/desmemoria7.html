@@ -1,0 +1,22 @@
+<!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        let app = firebase.app();
+        StariesAccount.Observer();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+<!--Por si acaso lo puse aquí también-->

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Memoria 2</title>
+  <link rel="stylesheet" href="../../css/stylemym.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <script src="../../js/removeBanner.js"></script>
+
+</head>
+<body>
+    <!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        let app = firebase.app();
+        StariesAccount.Observer();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttonmym.css">
+  <link rel="stylesheet" href="../../css/playermym.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>Audífonos</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/mym/Memory2Art.png" class="active" id="_1">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Memoria 2</span><br><br><br>
+    <span class="byline">Melodías y Memorias - Gabriel Lobo</span>
+    <p>Nunca he sido bueno haciendo amigos. Mis relaciones desde la escuela acababan siempre conmigo siendo excluido. Ni siquiera en El País Más Feliz del Mundo se podía evitar que algunas personas no fueran felices. No existe ningún lugar en el mundo que esté eximido de las tragedias, y La Ciudad Sin Nombre no era una excepción a esta regla.</p>
+    <p>&emsp;&emsp;Después del incidente de la memoria anterior, me dirigí a clase como si nada hubiera ocurrido. Presenté mi proyecto junto a mi compañero de grupo —y no, no era Jacob—. Y, pese a que al otro chico no le fue muy bien, mi calificación se mantuvo "en oro". Quería seguir sacando notas así, por lo que me dispuse a observar detenidamente a cada uno de mis compañeros; buscando opciones para un futuro colega con quien trabajar en las próximas asignaciones. No pensé que fuera a conseguir mucho más que un simple compañero.</p>
+    <p>&emsp;&emsp;Después de analizar cada presentación, me descubrí a mí mismo casi sin opciones. Prácticamente todos habían sacado notas regulares. Y aunque esto no es nada malo, no podía darme el lujo de trabajar con ellos si no quería conformarme con calificaciones medias. Sin embargo, hubo una presentación —la última, de hecho— que llamó mi atención.</p>
+    <p>&emsp;&emsp;El chico parecía ser agradable, aunque no lo había oído decir una sola palabra en toda la clase, o en las semanas previas. A pesar de eso, se expresó con una naturalidad impresionante para ser una clase de inglés conversacional. Pronunciaba a la perfección y cada una de las palabras que salían de su boca eran claras, concisas y fáciles de comprender, hasta para un sordo. Desde ese momento supe que trabajaría con él de allí en adelante. Aunque claro. Primero debía averiguar su nombre y si él quería trabajar conmigo.</p>
+    <p>&emsp;&emsp;—Felicidades, tienes un 10. Excelente trabajo, Roy —dijo la profesora al chico, a lo cual este contestó con un gesto y retornó a su asiento en completo silencio. Era alto, más que yo, al menos —aunque en esa época casi todos mis compañeros eran más altos que yo, menos un par de excepciones—. Tenía el cabello negro y un grupo de pecas que poblaban cada una de sus mejillas. Para mi suerte, la profesora nos dio trabajo en parejas durante la clase, así que aproveché la oportunidad para saber qué tan bien trabajaba Roy en grupo.</p>
+    <p>Resultó ser como yo esperaba. Pese a que era casi tan tímido como yo, pudimos trabajar muy bien, mejor de lo que pensé. Así que le sugerí que realizáramos el siguiente proyecto juntos, a lo cual asintió tras pensarlo un segundo. Y así transcurrió la tarde de ese lunes.</p>
+    <p>&emsp;&emsp;Ahora, ¿por qué no trabajé con Sea? Porque, pese a que tengo muchas clases en común con ella, inglés conversacional no se encontraba entre ellas, por lo que dejó de ser una opción. Este motivo me obligó a odiar de sobremanera la tarde de los lunes, la de los jueves y al martes entero durante todo el año. Después de todo, tampoco sabía cómo pedirle que trabajara conmigo. Volviendo al tema. Al día siguiente, o sea, el martes de esa misma semana, me encontré con Roy y con su amigo de la primaria en la cafetería a la hora del almuerzo. Ambos estaban usando un par de audífonos cada uno. Eran color negro y tenían un diseño muy particular. Los cables estaban unidos por un zipper del mismo color, lo cual no solo los hacía atractivos, sino que también ayudaba a que estos no se enredaran al guardarlos en su bolsillo.</p>
+    <p>&emsp;&emsp;—Lindos audífonos —señalé para llamar su atención.
+
+      <br><br>&emsp;&emsp;—¡Gracias! Nos los dieron como regalo de graduación al salir de primaria —explicó—. Y como mi madre colaboró en el evento, tengo otros pares en casa, por si te interesa comprarme alguno —sugirió.
+
+      <br><br>&emsp;&emsp;—Vaya... ¿A qué precio? —Pregunté, ya que sonaba a una propuesta prometedora para un amante de la música.
+
+      <br><br>&emsp;&emsp;—2 dólares el par —contestó, pensando que rechazaría la oferta, o al menos eso sugirió su expresión. Mientras tanto, su amigo se encargaba de llevar los envases con sus almuerzos al microondas de la cafetería. Yo no tenía que hacer eso nunca gracias a que había comprado un envase que mantiene el contenido caliente sin necesidad de un micro.
+
+      <br><br>&emsp;&emsp;—Genial. Te compro unos —dije, entusiasta.
+
+      <br><br>&emsp;&emsp;—¿En serio? ¡Qué bien! ¿Qué color te gustaría?
+
+      <br><br>&emsp;&emsp;—Negro —exclamé sin chistar, ya que se trata de mi color favorito.
+
+      <br><br>&emsp;&emsp;—Está bien. Te los traeré mañana.
+
+      <br><br>&nbsp;&nbsp;—Gracias —contesté para concluir nuestra conversación, al mismo tiempo que su amigo regresaba con sus envases calientes en sus manos.</p>
+    <p>Y así fue. Al día siguiente, me entregó los audífonos de color negro, tal y como se los pedí. Le pagué y ambos acabamos contentos. Sin embargo, los compré a pesar de que ya tenía otros que utilizaba a diario. A día de hoy, sigo preguntándome porqué lo hice. Después de todo, creo que en parte fue el destino, aunque suene algo supersticioso. De no haber sido por ese evento, no me habría hecho amigo de Roy. Quizás nunca habría llegado a conocerlo tanto. Tal vez ni siquiera estaría escribiendo esto. Y con certeza puedo decir que muchas de las cosas que están entrelazadas aquí no se habrían dado de no ser por él. Todo lo que ocurre de acá en adelante repercute tanto en mi vida como en la de Roy, para bien y para mal. Pero claro, en ese momento ninguno de los dos lo sabía. Durante el resto del año, entablé una amistad con él, y antes de que lo notara, se convirtió en mi mejor amigo.
+
+      <br><br>&emsp;&emsp;—Toma.
+
+      <br><br>&emsp;&emsp;—Muchas gracias, Roy. Ten —le dije mientras le entregaba su dinero.
+
+      <br><br>&emsp;&emsp;—Genial. Nos vemos.</p>
+    <p>Recuerdo perfectamente que esa misma tarde, Roy olvidó traer su gabacha al taller de arte que teníamos juntos durante todo el día. La profesora se molestó con todos los que olvidaron traerla, aunque no fuera algo vital para dibujar o colorear. El punto es que Roy terminó con un reporte de disciplina por falta de materiales escolares, aunque no lo tomaron en cuenta para su calificación final —o al menos eso fue lo que me dijo—. Sin embargo, esto les ocurrió a muchos otros de mis compañeros de clase, por lo que fue el tema principal durante la reunión de padres que hubo esa noche.</p>
+    <p>&emsp;&emsp;¿Por qué enfatizo en esto? Simple. El tercer encuentro se da gracias a esa reunión. Pero eso es tópico de la tercera memoria, no hay que correr. Volviendo a Roy. Él parecía ser siempre la persona indicada para pedirle consejo y ayuda cuando la necesitaba. Era completamente diferente a mis pasados amigos. Cuando se trataba de él, siempre que estábamos juntos, sentía que tenía a alguien en quién confiar. No me sentía excluido ni fuera de lugar.</p>
+    <p>&emsp;&emsp;Sin embargo, desde un principio recuerdo que, para mis adentros, yacía cierto temor de que algún día las cosas serían diferentes, tal y como ocurrió con mis demás amigos en el pasado. Me odio por eso. Detesto que mis temores se vuelvan realidad cuando se trata de las relaciones. Me hace pensar que tengo la culpa de que todo lo bueno que me ocurre acabe tarde o temprano.</p>
+    <p>&emsp;&emsp;Pero mi amistad con Roy iba demasiado bien para creerlo. Cosas así no me suelen suceder, pero ahí estaba. Un par de amigos disfrutando de una charla a la hora del almuerzo.</p>
+    <p>&emsp;&emsp;Tanto a Roy y a mí nos encanta la tecnología. Amamos las computadoras y los videojuegos. Era un factor de peso en nuestra amistad. Les explico. En nuestro instituto, los estudiantes debemos cursar durante 6 años antes de conseguir el bachillerato. El porqué es simple. Además de las otras materias académicas, cada estudiante debe elegir una especialidad. Es algo así como una carrera que se estudia a partir del décimo año hasta el doceavo. Existen diferentes especialidades que los estudiantes podemos elegir para desarrollarnos en cada área. Diseño Gráfico, Mecánica, Electrónica e Informática son algunas de estas áreas.</p>
+    <p>&emsp;&emsp;Roy y yo amamos la informática, por lo que desde que entramos al instituto presumíamos que iríamos a esa especialidad. Todos estos aspectos en común no hacían más que fortalecer nuestra amistad, llevándola poco a poco a convertirse en una fuerte hermandad. Y esto hacía que mi miedo a que nuestros destinos difirieran disminuyera.</p>
+    <p>&emsp;&emsp;Ambos éramos cómplices del otro con cada una de nuestras locuras, y así transcurrió el año para nosotros. Y sí, también me daba apoyo emocional cuando se trataba de Sea.</p>
+    <p>&emsp;&emsp;A pesar de ello, nunca lo oí mencionar que le gustara una chica en todo ese año. Cada vez que intentaba conseguir alguna respuesta a esa pregunta, me contestaba con lo mismo.
+
+      <br><br>&emsp;&emsp;—No le veo el sentido a tener novia ahora.
+
+      <br><br>&emsp;&emsp;—¿Por qué no? —le pregunté, extrañado.
+
+      <br><br>&emsp;&emsp;—Porque no tiene ningún objetivo. No te vas a casar con tu novia apenas te gradúes, ¿o sí?
+
+      <br><br>&emsp;&emsp;—Supongo que no, pero eso no lo vuelve algo malo, ¿no crees? —dije, tratando de comprenderlo.
+
+      <br><br>&emsp;&emsp;—En mi opinión, solo lo veo como una distracción, y como un aumento en la posibilidad de conseguir un embarazo no deseado —contestó con sarcasmo.
+
+      <br><br>&emsp;&emsp;—Pues no lo sé, a mí me gustaría tener algo con Sea. No digo que quiera tener un embarazo no deseado. Pero una relación no mata a nadie, ¿o sí? —le dije. Pobre de mí.</p>
+      <p>A Roy no le tomó mucho tiempo llegar a conocer a mi familia, agradarles y luego pasar mucho tiempo en mi casa jugando videojuegos. La música era otra de nuestras pasiones. Cada uno tenía su banda favorita y cada uno disfrutaba de las canciones del otro en un intercambio de melodías implícito en la rutina diaria. Yo amaba Twenty One Pilots, y él, Imagine Dragons. Y los dos amábamos también a la banda del otro. Después de todo, lo que te gusta a ti, me gusta a mí, ¿no?</p>
+      <p>&emsp;&emsp;Más tarde, otros más se unieron a nosotros y dejamos de ser un dúo. Pero eso no impidió que siguiéramos siendo tan unidos como en un principio. Le tengo amor y odio a mis memorias, porque me recuerdan lo mejor y lo peor de las personas que me importan. Y también me hacen llorar, claro. Tanto Roy como yo pasamos por mucho. Pero incluso ahora, los demás pueden afirmar que somos un dúo excepcional; que a donde va Roy, va Tyler y, a donde va Tyler, va Roy.</p>
+
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Memoria 3/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #800080; text-align: center;border-color: #800080;font-size:20px;">Siguiente...</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Melodías y Memorias.html#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #57a639; text-align: center;border-color: #57a639;font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+  <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['Brother'], trackNames = ['Kodaline'], albumArtworks = ['_1'], trackUrl = ['memoria2.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+</body>
+</html>

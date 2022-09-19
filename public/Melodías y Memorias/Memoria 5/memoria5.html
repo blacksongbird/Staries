@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Memoria 5</title>
+  <link rel="stylesheet" href="../../css/stylemym.css">
+  <link rel="stylesheet" href="../../css/textmessage.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="../../js/removeBanner.js"></script>
+
+</head>
+<body>
+  <!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    try {
+      let app = firebase.app();
+      StariesAccount.Observer();
+    } catch (e) {
+      console.error(e);
+    }
+  });
+</script>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttonmym.css">
+  <link rel="stylesheet" href="../../css/playermym.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>Te Quiero Como Amigo</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/mym/Memory5Art.png" class="active" id="_1">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Memoria 5</span><br><br><br>
+    <span class="byline">Melodías y Memorias - Gabriel Lobo</span>
+
+      <p>El estrés es un antagonista despiadado. Tener muchas cosas en la cabeza puede hacer que esta se vuelva en tu contra. Y tiene sentido. Mi vida en el instituto siempre ha estado cargada estrés, tanto académico como emocional. Y este último es el más desgraciado de los dos.</p>
+
+      <p>&emsp;&emsp;Falta un detalle para cerrar el tomo del 2016 y guardarlo entre mis memorias hasta que decida atormentarme otra vez. A lo largo de esos 12 meses, no me fijé en nada más que en mi estudio, y en Sea. Sin embargo, existió una época en la que perdí mi interés en la segunda mención —tanto por la primera mención como por cansancio—. Me harté de perseguir a alguien. Detestaba dar mucho y no recibir nada, y ahora —casi cuatro años después de esto, por si tenían curiosidad—, sigo cometiendo la misma idiotez. Y hay muchos ejemplos de ello, así como personajes con los que desearía haber hecho las cosas de un modo diferente. Varios de ellos son Roy, Rebecca, El Amigo de Lentes y Cabello Alborotado, Sea, Tara, La Chica de Cabello Corto y Ojos Carismáticos, El Conocido Que Me Apuñaló Por La Espalda, Tyler —así es, conmigo mismo es igual—, y muchos otros.</p>
+
+      <p>&emsp;&emsp;Volviendo al 2016, exactamente en diciembre 24. Pasé mi Navidad con mi familia —no sin antes ayudar como acólito en misa de gallo, como lo había hecho los 4 años previos, y los 4 siguientes—, y le escribí a Sea un mensaje a las 12 en punto, al igual que a Roy y a Rebecca. Recuerdo que no le dije nada elaborado, simplemente le escribí “Feliz Navidad” con un emoticón de dos corazones rosas —era algo que nos enviábamos seguido, pero solía confundirme mucho—. Esto fue lo que contestó:</p>
+      
+      <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    ¡Feliz Navidad, Tyler! ILYSM <3
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+            </div>
+        </div><br>
+
+      <p>Lógicamente, esto me confundió muchísimo. Demasiado. Al principio, no sabía qué significaba “ILYSM”. Y si ustedes tampoco lo saben, esta vez no les obligaré a usar Google. Las siglas ILYSM significan “I Love You So Much”, que traducido del inglés significa “Te Amo Demasiado”. Sé que sobreanalizo las situaciones casi siempre, pero incluso para alguien que no lo hace, un mensaje así puede ser muy confuso. Aparte, la mente del ser humano es despiadada por naturaleza, incluso con su propio dueño. Y en mi caso, no puedo negar que ella y mi serpiente han sido villanos a los que me veo obligado a temerles.</p>
+
+      <p>Y yo, iluso e imbécil en lo más extremo de la expresión, contesté:</p>
+<div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message received">
+                    ¡Feliz Navidad, Tyler! ILYSM <3
+                     <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  Me Too <3
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+        </div>
+      </div><br>
+
+      <p>Idiota. Idiota. Idiota.</p>
+
+      <p>Durante la semana que le quedaba a este trágicamente hermoso año, redacté mi declaración a Sea, inocentemente. Le envié el mensaje a Roy, a Rebecca y a otra chica preguntándoles qué les parecía. Roy, con su dura pero certera forma de ser, dijo que lo mejor era decírselo de frente y no por un mensaje de texto. Yo, como un terco estúpido, me negué a hacerlo en persona, pero no fue por miedo, sino porque deseaba que fuera en año nuevo. Y claramente, no contaba con una excusa para verla ese día. Así que opté por enviar el mensaje:</p>
+          
+          <div class="chat">
+          <div class="chat-container">
+            <div class="user-bar">
+              <div class="back">
+                <i class="zmdi zmdi-arrow-left"></i>
+              </div>
+              <div class="avatar">
+                <img src="../../img/mym/sea.png" alt="Avatar">
+              </div>
+              <div class="name">
+                <span>Sea</span>
+                <span class="status">online</span>
+              </div>
+              <div class="actions more">
+                <i class="zmdi zmdi-more-vert"></i>
+              </div>
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+        <div class="conversation">
+            <div class="conversation-container">
+                <div class="message sent">
+                  
+                  ¡Feliz año nuevo! Solo quería agradecerte por todo. La verdad es que este año no hubiera sido lo maravilloso que fue de no haber sido por ti. Siempre eras mi razón principal para levantarme cada mañana e ir al instituto. Al igual que la razón por la que odié los martes y jueves en los que no teníamos clases juntos. Esto es porque, honestamente, me gustas demasiado (y creo que fue obvio todo el año). Y aunque sé que por un chico que te lastimó, crees que todos los demás chicos somos iguales; y aunque sé que no soy el chico con la mejor apariencia ni el más atlético o más inteligente del instituto, estoy seguro de dos cosas. La primera es que soy alguien fiel sin importar las circunstancias, y si de algo puedes estar segura es que, si por alguna razón todo el mundo te da la espalda, yo te veré de frente y te apoyaré sin importar qué. Jamás te traicionaría, menos sabiendo lo mucho que eso duele. Y la segunda cosa de la que estoy seguro es que te amo. <3
+                  
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg></span>
+                  </span>
+            </div>
+        </div>
+      </div><br>
+
+      <p>Cursi, ¿no? Bueno. No quiero alargar esta dolorosa experiencia ni la quiero hacer parecer un cliché. Pero, recuerden que, aunque dije que la vida no es un cliché no significa que no ocurran cosas que son comunes. Para no mantener la expectativa, me rechazó.</p>
+
+      <p>&emsp;&emsp;Así comencé el fantástico año 2017. De haber sabido todo lo que ocurrió después, habría tomado otras decisiones.</p>
+
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Memoria 6/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #800080; text-align: center;border-color: #800080;font-size:20px;">Siguiente...</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Melodías y Memorias.html#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #57a639; text-align: center;border-color: #57a639;font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+  <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['FRIENDS'], trackNames = ['Marshmello feat. Anne-Marie'], albumArtworks = ['_1'], trackUrl = ['memoria5.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+</body>
+</html>

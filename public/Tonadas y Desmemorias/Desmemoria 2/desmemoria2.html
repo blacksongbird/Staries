@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Desmemoria 2</title>
+  <link rel="stylesheet" href="../../css/styletyd.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <script src="../../js/removeBanner.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttontyd.css">
+  <link rel="stylesheet" href="../../css/playertyd.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        let app = firebase.app();
+        StariesAccount.Observer();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>terapia</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/tyd/Oblivion2Art.png" class="active" id="_1">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Desmemoria 2</span><br><br><br>
+    <span class="byline">Tonadas y Desmemorias - Gabriel Lobo</span>
+    <p>&emsp;&emsp;—¿Un libro?
+    <br><br>&emsp;&emsp;—Sí. Esa puede ser una terapia perfecta para la ansiedad —contestó como si advirtiera con facilidad mi rostro lleno de escepticismo—. Además, ¿quién sabe? A lo mejor le agarras el gusto.
+    <br><br>&emsp;&emsp;—¿Y sobre qué? —pregunté, casi quejándome.
+    <br><br>&emsp;&emsp;—De lo que viviste. A veces es mejor dejarlo salir, ¿sabes?
+    <br><br>&emsp;&emsp;—¿No es lo que acabo de hacer?
+    <br><br>&emsp;&emsp;—Pues sí, pero creo que sería mejor que lo expongas como tú quieras, sin la presión de un psicólogo tomando notas de todo lo que dices. Al fin y al cabo, queremos evitar la medicación a toda costa, ¿no?
+    <br><br>&emsp;&emsp;—Está bien, haré el intento, pero dudo que algo pueda salir de esto.
+    <br><br>&emsp;&emsp;—El primer paso siempre es intentar, Tyler. Ya hiciste lo más difícil. Reconociste el problema y viniste a verme, ¿no?
+    <br><br>&emsp;&emsp;—Lo hago por mi novia. No porque de verdad me haya nacido. No busco ser hipócrita ni mucho menos, pero estoy harto de maquillar todo lo que digo con un “mi humilde opinión” o un “lo lamento”.
+    <br><br>&emsp;&emsp;—No tienes que fingir nada conmigo, Tyler. Me basta con saber lo que sientes. Así encontraremos una forma de ayudarte a superar este problema.
+    <br><br>&emsp;&emsp;—¿Después de tanto tiempo, cree que sea posible?
+    <br><br>&emsp;&emsp;—La ansiedad es un proble-... una condición desfavorable. Es algo que todos sentimos. Es normal.
+    <br><br>&emsp;&emsp;—Esto no se siente muy normal.
+    <br><br>&emsp;&emsp;—El tema está cuando tus niveles de ansiedad pierden su balance. Ahí es cuando hay que pedir ayuda. Lo cierto es que es algo crónico. Pero sé que podemos tratarte. Cuéntame. Dijiste que conociste una chica hace unas semanas. ¿Por qué lo resaltaste?
+    <br><br>&emsp;&emsp;—Tengo novia. No se supone que deba desarrollar sentimientos por alguien más, ¿o sí?
+    <br><br>&emsp;&emsp;—Tyler... Hay momentos en la vida en los que llegas a cuestionarte todo lo que haces o vives. Es normal. Ahora mismo, debes aclarar tu mente. Puedes dedicar algo de tiempo para ti. Tratar de pensar, respirar. Haz algo que ames hacer o que te distraiga. Debes decidir si de verdad amas a Sea, tanto como para mantener tu relación con ella, considerando las circunstancias. Y esa chica que conociste en Confirma, háblale. Eres muy joven para encasillarte en una relación amorosa. Quizás encuentres a alguien mejor. O quizás ya estás con una persona que de verdad te ama. Sea como sea, tratar de especular lo que ocurrirá no te ayudará a hacer nada más que aumentar tu ansiedad. Solo piénsalo bien, antes de que hagas algo de lo que te puedas arrepentir.
+    <br><br>&emsp;&emsp;—¿Está sugiriendo que termine con Sea?
+    <br><br>&emsp;&emsp;—Solo digo que es mejor darte un tiempo para ti mismo. Me dijiste que Sea ha estado abrumada con la Expo y el colegio, ¿no?
+    <br><br>&emsp;&emsp;—Sí, pero no puedo abandonarla sin más. Le rompería el corazón.
+    <br><br>&emsp;&emsp;—O quizás le harías un favor para su futuro. Una relación demanda demasiado tiempo, Tyler. Y es lo que menos tienes ahora mismo. 
+    <br><br>&emsp;&emsp;—Haré lo del libro. Gracias por su tiempo —dije para concluir nuestra conversación, antes de que mi ira hiciera algo que yo no quería hacer.</p>
+    
+    <p style="text-align:center;">*          *          *</p>
+    
+    <p>&emsp;&emsp;—Oh, recuerdo al psicólogo. No era muy listo, ¿verdad?
+    <br><br>&emsp;&emsp;—Él solo estaba tratando de ayudarme, Ansiedad. De verdad que estás podrido por dentro.
+    <br><br>&emsp;&emsp;—No, no. Ahí es donde te equivocas. Estamos podridos por dentro, Tyler. No me lances al fuego como si fuera mi culpa.
+    <br><br>&emsp;&emsp;—¿No te basta con haberme desangrado por tinta? Déjame escribir.
+    <br><br>&emsp;&emsp;—Y sigues con lo mismo, eso ya pasó. Déjalo ir, Ty.
+    </p>
+    
+    <p style="text-align:center;">*          *          *</p>
+    
+    <p>&emsp;&emsp;—Y con eso, ya pueden ver la utilidad que tiene el complemento a siete, y sus respectivas aplicaciones en una computadora, ya que…
+    <br><br>&emsp;&emsp;—Oye, no me siento bien, ya vuelvo —le susurré a Ever por la espalda para no distraer a los demás.
+    <br><br>&emsp;&emsp;—De acuerdo.
+    <br><br>Tras correr al baño, precipitándome por las escaleras del edificio, entré al cabinete del fondo y me encerré, temblando y con mi respiración entrecortada...
+    </p>
+    
+    <p style="text-align:center;">*          *          *</p>
+    
+    <p>&emsp;&emsp;—¡Espera! Yo recuerdo eso. ¿No crees que deberías dar un poco más de contexto? Después de todo, yo también estaba ahí.
+    <br><br>&emsp;&emsp;—¿Desde cuándo te importa el contexto? Ni siquiera recuerdo porqué peleamos ese día. Y no tengo las fechas ni mi celular para comprobarlo.
+    <br><br>&emsp;&emsp;—¿Cómo puede ser que seas más exigente que yo? —dice mientras chasquea los dedos de nuevo, y mi celular aparece sobre la mesa. Está encendido y cargado, no dejó pasar ningún detalle, hasta tiene conexión a Internet. Este lugar es demasiado surrealista.
+    </p>
+    
+    <p style="text-align:center;">*          *          *</p>
+    
+    <p>&emsp;&emsp;…y agitada. Era difícil dejar de pensar. Era todo lo que necesitaba. Dejar de pensar para al fin ver las cosas claramente. Pero era imposible sacarme de la cabeza lo que había ocurrido esa mañana.
+    </p>
+    
+    <span class="byline">+20 de marzo, 2019+</span><br><br><br>
+    
+    <p>&emsp;&emsp;—¿Qué tienes? ¿Está todo bien?
+    <br><br>&emsp;&emsp;—No —contestó frustrada, nunca la había visto así. Posteriormente, se alejó sin decir otra palabra. En vista de que no quería ni mirarme, tomé mi mochila, me despedí de los demás y me marché con Chloë al edificio de Informática.
+    <br><br>Estaba harto de rogar, lo recuerdo perfectamente. Lo cierto es que ya no podía mantener mi hipócrita cara de “no me ocurre nada” cada vez que la veía. Así que volví a ver al psicólogo, justo después del almuerzo.
+    <br><br>&emsp;&emsp;—¿Por qué la reunión de urgencia, Tyler?
+    <br><br>&emsp;&emsp;—Perdone, le prometo que no le tomaré mucho tiempo.
+    <br><br>&emsp;&emsp;—No, tranquilo. Tengo un rato libre. Cuéntame. ¿Qué ocurrió? ¿Por qué te ves tan cansado? ¿Ya te fijaste en que tienes ojeras?
+    <br><br>&emsp;&emsp;—He tenido varios ataques de ansiedad, al menos más de lo normal —dije ignorando la morbosidad de mis palabras—. No he podido dormir desde hace unas semanas.
+    <br><br>&emsp;&emsp;—Ya veo. ¿Qué cambió desde la última vez que nos vimos?
+    <br><br>&emsp;&emsp;—Nada, solo que todo sigue igual. Creo que ese es el problema. Estoy cansado de la rutina y asustado de cambiarla. Y ya no sé qué hacer con Sea.
+    <br><br>&emsp;&emsp;—Mira, Tyler. Te lo preguntaré de nuevo, pero no te mientas a ti mismo, no es sano. ¿Desde cuándo tienes ataques de ansiedad?
+    <br><br>&emsp;&emsp;—…
+    <br><br>&emsp;&emsp;—No puedo ayudarte si no me dejas. Sabes perfectamente que podría simplemente escribir una receta de antidepresivos y dejarte ir, pero fue lo primero que me pediste que no hiciera. Si no quieres eso, cuéntame. ¿Desde cuándo?
+    <br><br>&emsp;&emsp;—Finales del 2017.
+    <br><br>&emsp;&emsp;—El año en el que dijiste que Sea se hizo daño a sí misma, ¿no? ¿Existe la posibilidad de que ese evento fuera un detonante en tu ansiedad?
+    <br><br>&emsp;&emsp;—¿A qué se refiere?
+    <br><br>&emsp;&emsp;—En vista de que no tienes cara de querer seguir con rodeos, te lo diré sin más. ¿Crees que tu relación con Sea, tanto antes como ahora, sea un detonante en tu ansiedad?
+    <br><br>&emsp;&emsp;—…
+    <br><br>&emsp;&emsp;—Tyler. Si esto es así, como tu psiquiatra, considero que, por tu salud y desempeño académico, deberías tomar distancia de Sea, al menos hasta que calmes tu ansiedad. Por otro lado, me dijiste que ella no es la única que ha hecho esto entre las personas que conoces. Eso significa que hay alguien más que pudo generarte una recaída. Debes reordenar tus relaciones si de verdad quieres librarte de los medicamentos —exclamó sin dudar. Lo cierto es que apenas podía alcanzar a oír su voz, ya que el shock no me dejaba escuchar nada más que mi corazón acelerado—. Lamento tener que decírtelo de esta forma, pero lo que creo es que es lo mejor para ti. Me encantaría seguir platicando, pero ya se nos acabó el tiempo. Si vuelves a necesitar mi ayuda, avísame antes —aclaró mientras salía de su oficina, como si pudiera saber cuándo mi ansiedad me estaría matando o no.
+    <br><br>Atravesé el pasillo y bajé las escaleras, encaminándome  hacia los alrededores de los edificios académicos del instituto. Pasé justo por el frente de la fotocopiadora y caminé, completamente inmerso en mi latir, pensando en qué podría hacer para dejar de sentirme así.
+    <br><br>&emsp;&emsp;—¡Hola Tyler! —exclama una voz a mi izquierda, despertándome de mi trance—. ¿Estás bien? Tienes mala cara.
+    <br><br>&emsp;&emsp;—Hola Star. Perdona, no es nada.
+    </p>
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Desmemoria 3/loader.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #e77320; text-align: center;border-color: #e77320; font-size:20px;">Siguiente...</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Tonadas y Desmemorias.html#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #083244; text-align: center;border-color: #083244; font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+    <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['drugs'], trackNames = ['EDEN'], albumArtworks = ['_1'], trackUrl = ['desmemoria2.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+</body>
+</html>

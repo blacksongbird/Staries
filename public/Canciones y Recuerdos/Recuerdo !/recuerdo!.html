@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Recuerdo !</title>
+  <link rel="stylesheet" href="../../css/stylecyr.css">
+  <link rel="shortcut icon" href="../../logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <script src="../../js/removeBanner.js"></script>
+
+</head>
+<body>
+<!-- update the version number as needed -->
+<script defer src="../../__/firebase/7.14.6/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="../../__/firebase/7.14.6/firebase-auth.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-database.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-messaging.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-storage.js"></script>
+<script defer src="../../__/firebase/7.14.6/firebase-firestore.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="../../__/firebase/init.js"></script>
+<script src="../../firebase-utils.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      try {
+        let app = firebase.app();
+        StariesAccount.Observer();
+      } catch (e) {
+        console.error(e);
+      }
+    });
+  </script>
+<!-- partial:index.partial.html -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:600|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/buttoncyr.css">
+  <link rel="stylesheet" href="./player.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <style media="screen">
+  .control{
+
+      z-index: 2;
+      width: 40px;
+
+  }
+  #iconoboton{
+    font-size: 40px;
+  }
+  .icon-inner{
+    width: 20px;
+  }
+  .button{
+    width: 40px;
+    height: 40px;
+    margin-left: -2px;
+    margin-top: 15px;
+  }
+  </style>
+</head>
+
+<body>
+  <div id="progress"></div>
+<br>
+        <div class="switch"><span class="switch-text">Modo Oscuro:</span>
+            <span class="inner-switch">OFF</span>
+        </div>
+  <div class="container">
+    <h1>Interludio</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                    <div id="current-time"></div>
+                    <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                    <div id="ins-time"></div>
+                    <div id="s-hover"></div>
+                    <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_1">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_2">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_3">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_4">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_5">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_6">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_7">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_8">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_9">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_10">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_11">
+                    <img src="../../img/cyr/Flashback!Art.png" class="active" id="_12">
+                    <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls" style="margin-left: -300px;">
+                    <div class="control">
+                        <div class="button" id="play-previous" style="z-index:1;">
+                            <ion-icon name="skip-backward" id="iconoboton" style="z-index:1;"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-pause-button">
+                            <ion-icon name="play-circle" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="button" id="play-next">
+                            <ion-icon name="skip-forward" id="iconoboton"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <span class="byline">Recuerdo !</span><br><br><br>
+    <span class="byline">Canciones y Recuerdos - Gabriel Lobo</span>
+
+      <p>Se trataba de la primera vez que volvía a ir a un centro comercial en mucho tiempo —o quizás solo fui yo quien lo sintió así—. Conecto mis audífonos a mi teléfono, abro Spotify y, de nuevo, no sé qué escuchar. Paso por todas las canciones que tengo en mi lista. “Change” de NF, “you were good to me” de Jeremy Zucker —auch, esa dolió—. “Scrawny” de Wallows, “Conversations with my Wife - Acoustic” de Jon Bellion —es la que escucho cada vez que escribo sobre ti—. Pero hoy no.</p>
+      <p>&emsp;&emsp;Llevaba mucho tiempo con tantas cosas en la cabeza, la Expo ya había terminado, y una semana después, recordé algo tan crucial y tan fugaz que ocurrió esa noche en la que hablé contigo minutos antes de los fuegos artificiales.</p>
+      <p>&emsp;&emsp;Lo hice por mero instinto; quizás mi alma se sintió tan cómoda contigo que decidió decírtelo tan pronto —y si yo lo pienso ahora, estando al cien por ciento lúcido, sin tenerte frente a mí, haciéndome imposible pensar en algo más que en tus ojos o tu sonrisa, creo que me apresuré un poco—. Pero lo que más me sorprende es que, aunque me haya dado la cabeza para asimilarlo hasta hoy, tú me contestaste. Puede que mi ansiedad me esté engañando —en cuyo caso, lo más seguro es que nunca te dije nada de lo que creo haberte dicho—, pero creo que sí me contestaste, y me encuentro en una especie de limbo desde que me di cuenta de que así fue. Mi teléfono se cansó de esperar y se bloqueó. Con mi pulgar, presiono el botón de encender y toco el botón verde que dice Shuffle Play. Entonces suena una canción que no estaba listo para escuchar, no tan de repente. La detengo y entro a la página del álbum que le corresponde.</p>
+      <p>From Michigan With Love, de Quinn XCII. Nunca había sido un repertorio tan acertado hasta ahora. Quito la opción de Canción Aleatoria y toco la primera canción de mi odisea.</p>
+      <br>
+      <span class="byline"><ion-icon name="play" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Holding Hands (feat. Elohim)</span>
+      <br>
+      <p>Una conocida por todos nosotros. Básicamente expresa de manera explícita la necesidad de que todo sea color de rosa en una relación. Pero cuando se asoman los problemas, todo empieza, gradualmente, a tornarse un poco gris. Todo hasta el punto de sentir que solo sostienes la mano de un desconocido, y cito —textualmente—, apegándote a tu ego hasta que ya no puedes más.</p>
+      <p>&emsp;&emsp;Esta canción la coloqué como primeriza de la Memoria 10. Aquella en la que esa chica de la que alguna vez estuve enamorado se hizo daño a sí misma, provocándome ansiedad crónica hasta la fecha. No, no quiero que creas que es una especie de antagonista de esta historia. Los antagonistas no existen. Simplemente son el lado negativo de un punto de vista específico. Por eso creo que, si esta historia fuera escrita por ella, yo estaría ahora en su lugar. Y estoy seguro de que ha sufrido mucho más de lo que yo sufrí en su momento. Pero ahora, después de todo, si me escribiera de nuevo, me lo pensaría 2 veces antes de contestar. Aunque, como dije, dudo que nuestros egos nos lo permitan, de todos modos.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Autopilot</span>
+      <br>
+      <p>Ansiedad. Punto.</p>
+      <p>Describe cómo me hace sentir cuando mis picos llegan a lo más alto, como si no les importara tocar las estrellas por mí. Créeme, sería mejor que no se molestaran por hacerlo.</p>
+      <p>&emsp;&emsp;El sol resalta los colores de las pocas áreas verdes que mis ojos alcanzan a ver, mientras el viento mueve mi cabello a gusto, aunque, en este punto, ya no me importa tanto.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Life Must Go On</span>
+      <br>
+      <p>Nada ha sido igual desde que soplé mi vela 16. Así me sentí cuando finalmente vi el lado positivo de las cosas al terminar con Sea. Pese a perder amigos, gané muchos otros por los que daría mi vida sin dudarlo. Papá y Mamá hablan sobre algo que mis audífonos no me dejan alcanzar a escuchar. Adam sigue en Instagram, como de costumbre. Cuando Mamá se gira a decirme algo, asiento y finjo que la escuché, aunque la verdad, como vi que se reía, asumí que no era nada muy importante.</p>
+      <p>&emsp;&emsp;Es entonces cuando se adentra en la canción alguien a quien no esperaba escuchar. De repente, abre Jon Bellion con su estrofa colaborativa. Hace que le preste más atención de la que pensé que le daría a la canción. Un parpadeo y todo desaparece.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>U & Us</span>
+      <br>
+      <p>Simple. Auch, auch y auch. Tiros directamente al ego. Comienzo a pensar en qué habría pasado si nunca hubiera tenido ese ataque de ansiedad durante aquel miércoles por la tarde. Quizás ya no hablaría contigo, o posiblemente sí lo haría, pero nunca me habría aventurado a escribir hasta aquí. Quizás ella y yo habríamos terminado igual —o peor—, y esperar habría sido algo como sostener la mano de una desconocida —lo sé, me gustan los easter-eggs—. O tal vez un yo, en alguna otra posibilidad en la que el destino no hubiera sido tan despiadado y bondadoso al mismo tiempo, todavía se encuentre a su lado, siendo un poco más feliz de lo que yo solía serlo. Pero como dije, solo tal vez.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Werewolf</span>
+      <br>
+      <p>No te quiero volver a ver. Típico despecho de ruptura. No nos gusta admitirlo, pero todos lo hemos sentido. Esta canción lo demuestra a la perfección. Comienzo a recordar la época en la que la ignoraba aunque se acercaba a Roy frente a mí para llamar mi atención —era una de las pocas cosas malas de Confirma—. Pero me daba igual, porque después podía hablar contigo, un poco más en paz.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Tough (feat. Noah Kahan)</span>
+      <br>
+      <p>No eres tan ruda. De todas, esta es con la que más me ha costado identificarme. La chica de la que habla es ruda, adicta al deporte y no le gusta que vean su lado vulnerable. Pero, al fin y al cabo, ¿a quién le gusta?</p>
+      <p>&emsp;&emsp;Sin embargo, esta chica revela sus inseguridades solo con él. Después de todo, nunca ha habido una chica que sea idéntica a esta en mi vida. Pero es cierto que es difícil conseguir que alguien se abra contigo. Aunque me gusta pensar que lo he logrado contigo, y viceversa, ¿no?</p>
+      <p>&emsp;&emsp;Aún así, ella se convierte en un misterio confuso y difícil de entender. Es como si, al hablar con ella a solas, el escritor de la canción sintiera que está con una chica completamente distinta, a la que ella enmascara frente a todos los demás. Me suena algo familiar.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Matches</span>
+      <br>
+      <p>¿Por qué estoy obsesionado con mi autodestrucción? Diciendo que te necesito menos. Es lo que le dije. Lo recuerdo. Sentía que ya no aportaba nada más que altibajos a mi vida. Pero después de todo, me di cuenta de que todo aporta altibajos. Quizás ella me ayudaba a que los altos fueran más frecuentes. Tal vez, si hubiera pensado más en ella que en mí, no habría terminado todo como terminó. Pero basta de arrepentimientos. Demonios, ya recordé por qué no escucho este álbum.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>When I Die</span>
+      <br>
+      <p>La semana pasada me dijiste que los detalles pequeños eran los que más te gustaban. Cuando muera, eso es lo único que voy a recordar. Esos pequeños momentos contigo. Las catequesis, las fiestas que pudimos pasar juntos. Los encuentros “inesperados” en frente de nuestros edificios de especialidad. Esas sonrisas al otro lado de los pasillos o de la formación. Esos mensajes de audio, esos chistes y preguntas existenciales. Esos fuegos artificiales…</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Abel & Cain</span>
+      <br>
+      <p>Trato de aumentar mi propia autoestima convenciéndome de que no es cierto. Pero la verdad es que siempre he sentido que estás más allá de mi alcance. Quizás es lo que tú sientes también, porque ya me ha pasado. Pero por más que trate de parecer un chico normal, el espíritu nerd siempre consigue mostrarse de un modo u otro. Y tú lo has visto. Como cuando me dijiste que mi casa de Hogwarts era Ravenclaw. Lo sé porque, cuando me lo preguntaste, busqué en Internet cuáles eran las 4 casas de Hogwarts para poder contestar con otra cosa que no fuera un apagado y vergonzoso “No sé”. Resultó que Ravenclaw es para, y cito nuevamente, aquellos que tienden a tener un gran talento académico y que son estudiantes motivados. O sea, nerds. Y sí, me leíste como a un libro, otra vez. Y lo más seguro es que me lea todos los libros de Harry Potter ahora que sé que te gustan —después de todo, es algo que hago cuando alguien me interesa—.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Sad Still</span>
+      <br>
+      <p>Trastornos mentales, desde la ansiedad hasta la depresión, estrés excesivo, etcétera. Creo que me costó un poco tomarle gusto a esta canción, pero la letra no está muy lejos de la realidad, después de todo. Expresa casi perfectamente la montaña rusa de emociones que cualquiera siente durante las crisis de estrés o ansiedad. Es por eso que el ritmo es tan irregular. Pero, después de todo, así son todos los trastornos emocionales que puedas nombrar.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Good Thi….</span>
+      <br>
+      <p>¡Alto! Pausa. En serio, no.</p>
+      <span class="byline"><ion-icon name="pause" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon></span>
+      <br>
+      <p>No he vuelto a escuchar esta canción desde el 26 de febrero del 2019. Debo dejar de dedicar canciones como esas. En serio.</p>
+      <p>&emsp;&emsp;Me quito mis audífonos y paso mis dedos por el tabique de mi nariz, moviéndolos en círculos para calmar el dolor de cabeza. Después de un rato, respiro profundamente. Necesitaba darle un cambio al significado de esa canción, pero estaba tan apegada a mí, tan apegada a ella, que no podía siquiera presionar el botón Play, sabiendo qué sonaría por mis audífonos al hacerlo. Respiro de nuevo y comienzo a pensar. ¿Quizás afrontarlo sea la mejor forma de dejar ir esa canción y darle un valor nuevo? ¿O debería saltarla y continuar con el final del álbum? Finalmente me decido, me pongo nuevamente mis auriculares y presiono Play con mi dedo tembloroso.</p>
+      <br>
+      <span class="byline"><ion-icon name="play" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Good Thing Go</span>
+      <br>
+      <p><i>I want you to want me like you want a beer when it’s hot in the middle of June</i> —No puedo seguir—. <i>And I wanna be like your morning coffee, always the first thing you do</i> —ella amaba el café—. <i>Baby I know what you’re thinking before the words even come out of your mouth</i> —espera, no...—. <i>When I look at you, I forget what the hell we were talking about</i> —esta canción no habla de Sea—. <i>And I don’t deserve you, I’ll never hurt you. If I ever lost you, I’d die</i> —a Sea ya la perdí, y aunque la lastimé, sigo acá—. <i>If I couldn’t hold you, I would be so blue, and I’m not supposed to cry</i> —pero lloré frente a ti, igual que con ella, después de todo—. <i>Maybe I’m saying it too early, maybe I’m moving fast</i> —así es, te lo dije muy pronto—. <i>I may not be the first to love you, but I wanna be the last</i> —Dios, es cierto—. <i>When you know, then you know, and I can’t let a good thing go</i> —¿y si lo que dejé ir, ya no era bueno para mí?—. <i>I know I’m rough around the edges, not as smooth as the rest</i> —quizás ya conozcas a alguien mejor que yo—. <i>But I can promise you, when I’m with you, I’ll love you the best</i> —eso fue lo que te dije, y tú me contestaste—…</p>
+      <p>La canción continúa mientras nos acercamos a nuestro destino —que, en realidad, ya ni siquiera recuerdo cuál es—. Al mirar por la ventana del auto, aparece en mi mente aquello que te escribí con tanto cariño. <i>La vida es como una carretera…</i> Es cierto. Jamás creí que estaría compartiendo la mía con las personas con las que ahora lo hago, pero eso no es un arrepentimiento. Es una bendición. Sé que suena cursi y trillado pero, después de todo, no cambiaría nada de lo que hice en el pasado. La ansiedad me ha enseñado tantas cosas de las que ni siquiera sabía que necesitaba aprender. Y no, quizás no haya sido la forma más sana de aprenderlas, pero, me guste o no, yo no sería quien soy ahora de no ser por mi ansiedad. Y eso es lo más irónico de todo.</p>
+      <p>&emsp;&emsp;Si así lo prefieres, haz una pausa, y disfruta de esta canción, porque trata de ti. Tómate un segundo para enamorarte de lo pequeño de la vida, y verás que, si algo tan pequeño puede tener tanto valor, imagínate lo valiosa que eres tú.</p>
+      <p><i>...when you know, then you know, and we can’t let a good thing go.</i></p>
+      <p>&emsp;&emsp;Y con el cierre de la canción veo, a la distancia, tras la caída de la noche en el paisaje que cubría la autopista, una estrella, resplandeciendo entre sus iguales. Más brillante que estas, claro. Y entonces comprendí que, independientemente del tiempo o la distancia, sin importar si algún día llegas a leer esto o acaba enterrado en el olvido, aunque nunca signifique algo para ti, siempre estarás presente en mi corazón de la misma forma en que las estrellas del cielo me cuidan y acogen todas las noches hasta la última de mi vida.</p>
+      <br>
+      <span class="byline"><ion-icon name="skip-forward" id="iconoboton" style="font-size:30px;margin-bottom:-8px;"></ion-icon><br><br>Right Where You Should Be</span>
+      <br>
+      <p>Después de todo lo que hemos vivido, y todo lo que hemos pasado, te juro que estamos justo donde debemos estar. ¿Qué tal si, dejando de lado las memorias, debería enfocarme en nuestro presente? Porque, ¿para qué lamentarme pensando en lo que ocurrió hace tanto ya? ¿Y si esa es la clave para calmar mi ansiedad? ¿Qué tal y si la cura es estar con Frank, Ever, Jorge, Ari, Caro, Jime, Jeaus, Marco, Chloe, Roy, Rebecca, Adam, Mamá, Papá, Josh, Monny y todos aquellos que son, en verdad, amigos?</p>
+      <p>¿Qué tal y si, después de todo, la cura que Dios realmente quiere que vea, en realidad, eres tú?</p>
+
+
+
+  </div>
+  <div class="col-md-12 text-center"style="z-index: 5;" align="center">
+    <a class="btn btn-coffee btn-border" href="../Recuerdo 15/loader/index.html" style="z-index: 3; margin-left: auto;margin-bottom: 100px; outline: none;color: #0da6c2; text-align: center;border-color: #0da6c2; font-size:20px;">Siguiente...</a>
+    <br>
+    <a class="btn btn-coffee btn-border" href="../../Canciones y Recuerdos.html#service" style="z-index: 3; margin-left: auto;margin-top: -150px; outline: none;color: #b7c813; text-align: center;border-color: #b7c813; font-size:20px;">Volver al Índice</a>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../../js/scriptread.js"></script>
+  <link rel="stylesheet" href="../../css/dark.css">
+    <script src="../../js/dark.js"></script>
+  <script type="text/javascript">
+  $(function()
+{
+    var playerTrack = $("#player-track"), bgArtwork = $('#bg-artwork'), bgArtworkUrl, albumName = $('#album-name'), trackName = $('#track-name'), albumArt = $('#album-art'), sArea = $('#s-area'), seekBar = $('#seek-bar'), trackTime = $('#track-time'), insTime = $('#ins-time'), sHover = $('#s-hover'), playPauseButton = $("#play-pause-button"),  i = playPauseButton.find('ion-icon'), tProgress = $('#current-time'), tTime = $('#track-length'), seekT, seekLoc, seekBarPos, cM, ctMinutes, ctSeconds, curMinutes, curSeconds, durMinutes, durSeconds, playProgress, bTime, nTime = 0, buffInterval = null, tFlag = false, albums = ['Holding Hands', 'Autopilot', 'Life Must Go On', 'U & Us', 'Werewolf', 'Tough', 'Matches', 'When I Die', 'Abel & Cain', 'Sad Still', 'Good Thing Go', 'Right Where You Should Be'], trackNames = ['Quinn XCII'], albumArtworks = ['_1','_2','_3','_4','_5','_6','_7','_8','_9','_10','_11','_12'], trackUrl = ['recuerdo!1.mp3', 'recuerdo!2.mp3', 'recuerdo!3.mp3', 'recuerdo!4.mp3', 'recuerdo!5.mp3', 'recuerdo!6.mp3', 'recuerdo!7.mp3', 'recuerdo!8.mp3', 'recuerdo!9.mp3', 'recuerdo!10.mp3', 'recuerdo!11.mp3', 'recuerdo!12.mp3'], playPreviousTrackButton = $('#play-previous'), playNextTrackButton = $('#play-next'), currIndex = -1;
+
+    function playPause()
+    {
+        setTimeout(function()
+        {
+            if(audio.paused)
+            {
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+                checkBuffering();
+                i.attr('name','pause');
+                audio.play();
+            }
+            else
+            {
+                playerTrack.removeClass('active');
+                albumArt.removeClass('active');
+                clearInterval(buffInterval);
+                albumArt.removeClass('buffering');
+                i.attr('name','play-circle');
+                audio.pause();
+            }
+        },300);
+    }
+
+
+	function showHover(event)
+	{
+		seekBarPos = sArea.offset();
+		seekT = event.clientX - seekBarPos.left;
+		seekLoc = audio.duration * (seekT / sArea.outerWidth());
+
+		sHover.width(seekT);
+
+		cM = seekLoc / 60;
+
+		ctMinutes = Math.floor(cM);
+		ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+
+		if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+        if( (ctMinutes < 0) || (ctSeconds < 0) )
+			return;
+
+		if(ctMinutes < 10)
+			ctMinutes = '0'+ctMinutes;
+		if(ctSeconds < 10)
+			ctSeconds = '0'+ctSeconds;
+
+        if( isNaN(ctMinutes) || isNaN(ctSeconds) )
+            insTime.text('--:--');
+        else
+		    insTime.text(ctMinutes+':'+ctSeconds);
+
+		insTime.css({'left':seekT,'margin-left':'-21px'}).fadeIn(0);
+
+	}
+
+    function hideHover()
+	{
+        sHover.width(0);
+        insTime.text('00:00').css({'left':'0px','margin-left':'0px'}).fadeOut(0);
+    }
+
+    function playFromClickedPos()
+    {
+        audio.currentTime = seekLoc;
+		seekBar.width(seekT);
+		hideHover();
+    }
+
+    function updateCurrTime()
+	{
+        nTime = new Date();
+        nTime = nTime.getTime();
+
+        if( !tFlag )
+        {
+            tFlag = true;
+            trackTime.addClass('active');
+        }
+
+		curMinutes = Math.floor(audio.currentTime / 60);
+		curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+
+		durMinutes = Math.floor(audio.duration / 60);
+		durSeconds = Math.floor(audio.duration - durMinutes * 60);
+
+		playProgress = (audio.currentTime / audio.duration) * 100;
+
+		if(curMinutes < 10)
+			curMinutes = '0'+curMinutes;
+		if(curSeconds < 10)
+			curSeconds = '0'+curSeconds;
+
+		if(durMinutes < 10)
+			durMinutes = '0'+durMinutes;
+		if(durSeconds < 10)
+			durSeconds = '0'+durSeconds;
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) )
+            tProgress.text('00:00');
+        else
+		    tProgress.text(curMinutes+':'+curSeconds);
+
+        if( isNaN(durMinutes) || isNaN(durSeconds) )
+            tTime.text('00:00');
+        else
+		    tTime.text(durMinutes+':'+durSeconds);
+
+        if( isNaN(curMinutes) || isNaN(curSeconds) || isNaN(durMinutes) || isNaN(durSeconds) )
+            trackTime.removeClass('active');
+        else
+            trackTime.addClass('active');
+
+
+		seekBar.width(playProgress+'%');
+
+		if( playProgress == 100 )
+		{
+			i.attr('name','play-circle');
+			seekBar.width(0);
+            tProgress.text('00:00');
+            albumArt.removeClass('buffering').removeClass('active');
+            clearInterval(buffInterval);
+		}
+    }
+
+    function checkBuffering()
+    {
+        clearInterval(buffInterval);
+        buffInterval = setInterval(function()
+        {
+            if( (nTime == 0) || (bTime - nTime) > 1000  )
+                albumArt.addClass('buffering');
+            else
+                albumArt.removeClass('buffering');
+
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+        },100);
+    }
+
+    function selectTrack(flag)
+    {
+        if( flag == 0 || flag == 1 )
+            ++currIndex;
+        else
+            --currIndex;
+
+        if( (currIndex > -1) && (currIndex < albumArtworks.length) )
+        {
+            if( flag == 0 )
+                i.attr('name','play-circle');
+            else
+            {
+                albumArt.removeClass('buffering');
+                i.attr('name','pause');
+            }
+
+            seekBar.width(0);
+            trackTime.removeClass('active');
+            tProgress.text('00:00');
+            tTime.text('00:00');
+
+            currAlbum = albums[currIndex];
+            currTrackName = trackNames[currIndex];
+            currArtwork = albumArtworks[currIndex];
+
+            audio.src = trackUrl[currIndex];
+
+            nTime = 0;
+            bTime = new Date();
+            bTime = bTime.getTime();
+
+            if(flag != 0)
+            {
+                audio.play();
+                playerTrack.addClass('active');
+                albumArt.addClass('active');
+
+                clearInterval(buffInterval);
+                checkBuffering();
+            }
+
+            albumName.text(currAlbum);
+            trackName.text(currTrackName);
+            albumArt.find('img.active').removeClass('active');
+            $('#'+currArtwork).addClass('active');
+
+            bgArtworkUrl = $('#'+currArtwork).attr('src');
+
+            bgArtwork.css({'background-image':'url('+bgArtworkUrl+')'});
+        }
+        else
+        {
+            if( flag == 0 || flag == 1 )
+                --currIndex;
+            else
+                ++currIndex;
+        }
+    }
+
+    function initPlayer()
+	{
+        audio = new Audio();
+
+		selectTrack(0);
+
+		audio.loop = true;
+
+		playPauseButton.on('click',playPause);
+
+		sArea.mousemove(function(event){ showHover(event); });
+
+        sArea.mouseout(hideHover);
+
+        sArea.on('click',playFromClickedPos);
+
+        $(audio).on('timeupdate',updateCurrTime);
+
+        playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+        playNextTrackButton.on('click',function(){ selectTrack(1);});
+	}
+
+	initPlayer();
+});
+  </script>
+
+</body>
+</html>
